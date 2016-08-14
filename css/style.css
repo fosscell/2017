@@ -1,7 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
-    background: url("../img/background.jpg");
+/*    background: url("../img/background.jpg");*/
     font-family: 'Raleway';
-    color: white;
+/*    color: white;*/
+    height: 100%;
 }
 
 #logo {
@@ -16,19 +21,20 @@ body {
 }
 
 .navlist {
+/*    position: fixed;*/
     margin-top: -0.2%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2em;
 /*    border: 1px solid white;*/
-    color: white;
+/*    color: white;*/
     list-style-type: none;
     text-align: center;
 }
 
 .navlist a {
-    color: white;
+/*    color: white;*/
     text-decoration: none;
 }
 
@@ -44,6 +50,7 @@ body {
     margin-right: auto;
     text-align: center;
     margin-top: 4%;
+    padding-bottom: 10%;
 }
 
 .content .info {
@@ -60,7 +67,7 @@ body {
 }
 
 .arrows path {
-    stroke: #FFFFFF;
+    stroke: #000;
     fill: transparent;
     stroke-width: 1px;
     animation: arrow 2s infinite;
@@ -96,4 +103,41 @@ body {
 .arrows path.a3 {
     animation-delay:0s;
     -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+section {
+    height: 100%;
+/*    padding-top: 5%;*/
+}
+
+.about {
+    height: 100%;    
+}
+
+.intro {
+    height: 100%;
+}
+
+.img {
+    width: 30%;
+    float: left;
+    padding: 50px;
+}
+
+.img img {
+    width: 320px;
+    height: 320px;
+}
+
+.data {
+    font-size: 20px;
+    padding: 80px 10px 80px 10px;
+    float: left;
+    width: 60%;
+}
+
+.container {
+    width: 100%;
+    padding-top: 10%;
+    height: 60%;
 }
