@@ -182,88 +182,152 @@ section {
     text-align: center;
 }
 
+[class*='col-'] {
+    float: left;
+    width: 20%;
+}
+
 .grid {
-/*	padding: 20px 20px 100px 20px;*/
-	max-width: 1300px;
-	margin: 0 auto;
-	list-style: none;
-	text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
 }
 
-.grid li {
+.photo {
+    width: 22%;
+    padding: 1%;
+    display: inline;
+    float: left;
+}
+
+.photo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+	top: auto;
+	bottom: 0;
+	padding: 0.2em;
+	height: 4.75em;
+	background: #79FAC4;
+	color: #3c4a50;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+.hovereffect img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    position: relative;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.hovereffect:hover img {
+    -webkit-transform: translate3d(0,-10%,0);
+	transform: translate3d(0,-10%,0);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding-top: 23px;
+    padding-left: 5px;
+/*    background: rgba(0, 0, 0, 0.6);*/
+	float: left;
+	margin: 0px;
 	display: inline-block;
-	width: 440px;
-	margin: 0;
-	padding: 20px;
-	text-align: left;
-	position: relative;
 }
 
-.grid figure {
-	margin: 0;
-	position: relative;
-}
-
-.grid figure img {
-	max-width: 100%;
-	display: block;
-	position: relative;
-}
-
-.grid figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
-	background: #2c3f52;
-	color: #ed4e6e;
-}
-
-.grid figcaption h3 {
-	margin: 0;
-	padding: 0;
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
 	color: #fff;
+	border: 1px solid #fff;
+	margin: 50px 0 0 0;
+	background-color: transparent;
 }
 
-.grid figcaption span:before {
-	content: 'by ';
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
 }
 
-.grid figcaption a {
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
+.hovereffect p.icon-links a {
+	float: right;
+	color: #3c4a50;
+	font-size: 1.4em;
+}
+
+.hovereffect:hover p.icon-links a:hover,
+.hovereffect:hover p.icon-links a:focus {
+	color: #252d31;
+}
+
+.hovereffect h2,
+.hovereffect p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+
+.hovereffect p.icon-links a span:before {
 	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
+	padding: 8px 10px;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.cs-style-6 figure img {
-	z-index: 10;
-	-webkit-transition: -webkit-transform 0.4s;
-	-moz-transition: -moz-transform 0.4s;
-	transition: transform 0.4s;
+
+.hovereffect:hover .overlay,
+.hovereffect:hover h2,
+.hovereffect:hover p.icon-links a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 
-.cs-style-6 figure:hover img,
-.cs-style-6 figure.cs-hover img {
-	-webkit-transform: translateY(-50px) scale(0.5);
-	-moz-transform: translateY(-50px) scale(0.5);
-	-ms-transform: translateY(-50px) scale(0.5);
-	transform: translateY(-50px) scale(0.5);
+.hovereffect:hover h2 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
 }
 
-.cs-style-6 figcaption {
-	height: 100%;
-	width: 100%;
+.hovereffect:hover p.icon-links a:nth-child(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
 }
 
-.cs-style-6 figcaption h3 {
-	margin-top: 60%;
+.hovereffect:hover p.icon-links a:nth-child(2) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
 }
 
-.cs-style-6 figcaption a {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
+.hovereffect:hover p.icon-links a:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
 }
