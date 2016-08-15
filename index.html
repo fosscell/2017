@@ -27,21 +27,23 @@
 </head>
     
 <body>
-    <div id="fullpage">
+      <div id="fullpage">
         <section class="intro section" style="background-color: #d5d5d5;">
+<!--        <div class="nav">-->
             <div id="logo">
                 <img src="img/logo.png">
             </div>
-            <ul class="navlist">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#venue">Venue</a></li>
-                <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#sponsership">Sponsership</a></li>
-                <li><a href="#register">Register</a></li>
+            <ul class="navlist" id="menu">
+                <li data-menuanchor="1page"><a href="#home">Home</a></li>
+                <li data-menuanchor="2page"><a href="#about">About</a></li>
+                <li data-menuanchor="3page"><a href="#events">Events</a></li>
+                <li data-menuanchor="4page"><a href="#venue">Venue</a></li>
+                <li data-menuanchor="5page"><a href="#speakers">Speakers</a></li>
+                <li data-menuanchor="6page"><a href="#sponsership">Sponsership</a></li>
+                <li data-menuanchor="7page"><a href="#register">Register</a></li>
             </ul>
-
+<!--        </div>-->
+      
             <div class="content">
                 <h1 class="main-head">FOSSMEET '17 <br />NIT CALICUT</h1>
                 <p class="info">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
@@ -229,17 +231,22 @@
                 </div>
             </div>                    
         </section>
-        <section class="events section" id="events" style="background-color: #c98474;">
+        <section class="sponsers section" id="sponsership" style="background-color: #c98474;">
             <div class="container">
                 <div class="section-head">Events</div>
 <!--                <div class="img"><img src="img/logo.png"></div>-->
                 <div class="data1"><p>The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects. Upholding the philosophy of FOSS, the event has talks and workshops dealing with the current trends in FOSS and open hardware, hands-on sessions to develop skills and a place to meet like minded people.</p></div>
             </div>
         </section>
+        
     </div>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage();
+        $('#fullpage').fullpage({
+//            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            anchors: ['1page', '2page', '3page', '4page', '5page', '6page', '7page'],
+            menu: '#menu',
+            css3: true,
+            scrollingSpeed: 1000
         });
     </script>
 </body>
