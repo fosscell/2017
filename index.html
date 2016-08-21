@@ -45,58 +45,56 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
         <!--Custom CSS-->
-        <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
     </head>
 
     <body>
-        <div id="fullpage">
-          <section class="intro section" style="background-color: #d5d5d5;">
-              <!--        <div class="nav">-->
-              <div id="logo">
-                  <img src="img/logo.png">
-              </div>
-              <ul class="navlist" id="menu">
-                  <li data-menuanchor="1page"><a href="#home">Home</a>
-                  </li>
-                  <li data-menuanchor="2page"><a href="#about">About</a>
-                  </li>
-                  <li data-menuanchor="3page"><a href="#events">Events</a>
-                  </li>
-                  <li data-menuanchor="4page"><a href="#venue">Venue</a>
-                  </li>
-                  <li data-menuanchor="5page"><a href="#speakers">Speakers</a>
-                  </li>
-                  <li data-menuanchor="6page"><a href="#sponsership">Sponsership</a>
-                  </li>
-                  <li data-menuanchor="7page"><a href="#register">Register</a>
-                  </li>
-              </ul>
-              <!--        </div>-->
+        <div id="container" data-XSwitch>
+            <div class="sections">
+                  <div class="intro section" id="section0" style="background-color: #d5d5d5;">
+                      <div id="logo">
+                          <img src="img/logo.png">
+                      </div>
+                      <ul class="navlist" id="menu">
+                          <li><a href="#home">Home</a>
+                          </li>
+                          <li><a href="#about">About</a>
+                          </li>
+                          <li><a href="#events">Events</a>
+                          </li>
+                          <li><a href="#venue">Venue</a>
+                          </li>
+                          <li><a href="#speakers">Speakers</a>
+                          </li>
+                          <li><a href="#sponsership">Sponsership</a>
+                          </li>
+                          <li><a href="#register">Register</a>
+                          </li>
+                      </ul>
 
-              <div class="content">
-                  <h1 class="main-head">FOSSMEET '17 <br />NIT CALICUT</h1>
-                  <p class="info">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
-              </div>
+                      <div class="content">
+                          <h1 class="main-head">FOSSMEET '17 <br />NIT CALICUT</h1>
+                          <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type spec</p>
+                      </div>
 
-              <svg class="arrows" data-0p="display:block;" data-10p="display:none;">
-                  <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                  <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                  <path class="a3" d="M0 40 L30 72 L60 40"></path>
-              </svg>
-          </section>
+                      <svg class="arrows" data-0p="display:block;" data-10p="display:none;">
+                          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                      </svg>
+                  </div>
 
-          <section class="about section" id="about" style="background-color: #675682;">
+          <div class="about section" id="about" style="background-color: #675682;">
               <div class="container">
                   <div class="section-head">About</div>
                   <div class="img"><img src="img/logo.png">
                   </div>
                   <div class="data">FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut. Started in 2005 as FLOSS(Free/Libre Open Source Software) Meet with a vision to create a culture of innovation, evolution and open standards, the meet intends to support the FOSS community, open education system and dissemination of FOSS ideology. The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects.</div>
               </div>
-          </section>
+          </div>
 
-          <section class="events section" id="events" style="background-color: #c98474;">
+          <div class="events section" id="events" style="background-color: #c98474;">
               <div class="container">
                   <div class="section-head">Events</div>
                   <!--                <div class="img"><img src="img/logo.png"></div>-->
@@ -104,9 +102,9 @@
                       <p>The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects. Upholding the philosophy of FOSS, the event has talks and workshops dealing with the current trends in FOSS and open hardware, hands-on sessions to develop skills and a place to meet like minded people.</p>
                   </div>
               </div>
-          </section>
+          </div>
 
-          <section class="Speakers section" id="speakers" style="background-color: #6D8B92;">
+          <div class="Speakers section" id="speakers" style="background-color: #6D8B92;">
               <div class="container">
                   <div class="section-head">Speakers</div>
                   <div class="grid">
@@ -264,8 +262,8 @@
                       </div>
                   </div>
               </div>
-          </section>
-          <section class="sponsers section" id="sponsership" style="background-color: #c98474;">
+          </div>
+          <div class="sponsers section" id="sponsership" style="background-color: #c98474;">
               <div class="container">
                   <div class="section-head">Events</div>
                   <!--                <div class="img"><img src="img/logo.png"></div>-->
@@ -273,13 +271,12 @@
                       <p>The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects. Upholding the philosophy of FOSS, the event has talks and workshops dealing with the current trends in FOSS and open hardware, hands-on sessions to develop skills and a place to meet like minded people.</p>
                   </div>
               </div>
-          </section>
+          </div>
 
         </div>
 
         <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/jquery.easings.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+        <script src="js/XSwitch.js"></script> 
         <script type="text/javascript" src="js/script.js"></script>
 
     </body>

@@ -1,7 +1,16 @@
-$('#fullpage').fullpage({
-    // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-    // anchors: ['1page', '2page', '3page', '4page', '5page', '6page', '7page'],
-    menu: '#menu',
-    css3: false,
-    scrollingSpeed: 1000
+$('#container').XSwitch({
+    selectors: {
+        sections: '.sections',
+        section: '.section',
+        page: '.pages',
+        active: '.active'
+    },
+    index: 0,
+    easing: 'ease',
+    duration: 700,
+    loop: false,
+    pagination: true,
+    keyboard: true,
+    direction: 'vertical',
+    callback: ''
 });
