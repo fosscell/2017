@@ -1,4 +1,4 @@
-(function mapConfig($, undefined) {
+function mapConfig() {
     'use strict';
     var map = L.map('map').setView([11.32144, 75.93503], 17);
 
@@ -18,4 +18,4 @@
     marker.on('mouseout', function (e) {
         this.closePopup();
     });
-}(jQuery));
+};
