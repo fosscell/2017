@@ -41,10 +41,12 @@
     <![endif]-->
 
     <!--Font CSS-->
-    <link href='https://fonts.googleapis.com/css?family=Raleway|Source+Code+Pro|Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Source+Code+Pro|Lato|Lora' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!--Custom CSS-->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -52,11 +54,13 @@
       
 <body>
     <ul id="menu">
-        <li data-menuanchor="Main" class="active"><a href="#main">Home</a></li>
+        <li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
         <li data-menuanchor="About"><a href="#About">About</a></li>
         <li data-menuanchor="Events"><a href="#Events">Events</a></li>
         <li data-menuanchor="Speakers"><a href="#Speakers">Speakers</a></li>
-        <li data-menuanchor="Sponsors"><a href="#Sponsers">Sponsorship</a></li>
+<!--        <li data-menuanchor="Sponsors"><a href="#Sponsers">Sponsorship</a></li>-->
+        <li data-menuanchor="Gallary"><a href="#Gallary">Gallary</a></li>
+        <li data-menuanchor="Location"><a href="#Location">Location</a></li>
     </ul>
     
     <div id="fullpage">
@@ -74,14 +78,14 @@
         </div>
         <div class="section" id="section1">
             <div class="container">
-                <div class="section-head">About</div>
+<!--                <div class="section-head">About</div>-->
                 <div class="img"><img src="img/logo.png"></div>
                 <div class="data">FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut. Started in 2005 as FLOSS(Free/Libre Open Source Software) Meet with a vision to create a culture of innovation, evolution and open standards, the meet intends to support the FOSS community, open education system and dissemination of FOSS ideology. The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects.</div>
             </div>
         </div>
         <div class="section" id="section2">
             <div class="container">
-                  <div class="section-head">Events</div>
+<!--                  <div class="section-head">Events</div>-->
                   <div class="data1">
                       <p>The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects. Upholding the philosophy of FOSS, the event has talks and workshops dealing with the current trends in FOSS and open hardware, hands-on sessions to develop skills and a place to meet like minded people.</p>
                   </div>
@@ -246,12 +250,159 @@
                   </div>
               </div>
         </div>
-    </div>
+        
+        <div class="section" id="section4">
+            <ul class="container cards" id="lightSlider">
+                <li class="card">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/events.JPG" style="height:auto">
+                        </div>
+                        <div class="details">
+                            <div class="header">Conclave</div>
+                            <div class="meta">
+                                <span>Theme: 'short description'</span>
+                            </div>
+                            <div class="description">
+                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/events.JPG" style="height:auto">
+                        </div>
+                        <div class="details">
+                            <div class="header">Conclave</div>
+                            <div class="meta">
+                                <span>Theme: 'short description'</span>
+                            </div>
+                            <div class="description">
+                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/events.JPG" style="height:auto">
+                        </div>
+                        <div class="details">
+                            <div class="header">Conclave</div>
+                            <div class="meta">
+                                <span>Theme: 'short description'</span>
+                            </div>
+                            <div class="description">
+                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/events.JPG" style="height:auto">
+                        </div>
+                        <div class="details">
+                            <div class="header">Conclave</div>
+                            <div class="meta">
+                                <span>Theme: 'short description'</span>
+                            </div>
+                            <div class="description">
+                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/events.JPG" style="height:auto">
+                        </div>
+                        <div class="details">
+                            <div class="header">Conclave</div>
+                            <div class="meta">
+                                <span>Theme: 'short description'</span>
+                            </div>
+                            <div class="description">
+                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/events.JPG" style="height:auto">
+                        </div>
+                        <div class="details">
+                            <div class="header">Conclave</div>
+                            <div class="meta">
+                                <span>Theme: 'short description'</span>
+                            </div>
+                            <div class="description">
+                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card col span_1_of_4">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/events.JPG" style="height:auto">
+                        </div>
+                        <div class="details">
+                            <div class="header">Conclave</div>
+                            <div class="meta">
+                                <span>Theme: 'short description'</span>
+                            </div>
+                            <div class="description">
+                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/exhibition.jpg" style="height:auto">
+                        </div>
+                        <div class="details">
+                            <div class="header">Conclave</div>
+                            <div class="meta">
+                                <span>Theme: 'short description'</span>
+                            </div>
+                            <div class="description">
+                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section" id="section5">
+            <div class="container" id="map">
+            </div>
+        </div>
+        
+        <div class="section fp-auto-height" id="section6">
+            <div class="container intro footer">
+                <h1>Intellectual and creative minds of NIT Calicut</h1>
+            </div>
+        </div>
+    </div>    
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/vendors/scrolloverflow.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/vendors/jquery.easings.min.js"></script>
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script src="js/mapConfig.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

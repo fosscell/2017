@@ -3,10 +3,9 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['main', 'About', 'Events', 'Speakers', 'Sponsors'],
+        anchors:['main', 'About', 'Events', 'Speakers', 'Gallary', 'Location', 'Contact'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
         showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -43,7 +42,7 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor : ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+        sectionsColor : ['#eae8dd', '#4BBFC3', '#7BAABE', 'whitesmoke', '#f4f2f0'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
@@ -63,4 +62,31 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
+    
+    $("#lightSlider").lightSlider({
+        item:3,
+        loop:false,
+        slideMove:1,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:2,
+                    slideMove:1
+                  }
+            }
+        ]
+    });
+    
+    $("#map").mapConfig();
 });
