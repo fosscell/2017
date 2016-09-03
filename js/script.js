@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['main', 'About', 'Events', 'Speakers', 'Gallary', 'Location', 'Contact', 'ContactForm', 'Close'],
+        anchors:['main', 'About', 'Events', 'Speakers', 'Gallary', 'Location', 'Contact', 'ContactInfo', 'Close'],
         navigation: false,
         navigationPosition: 'right',
         showActiveTooltip: true,
