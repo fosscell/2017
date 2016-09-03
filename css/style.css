@@ -458,12 +458,154 @@ body{
 
 
 .fp-auto-height {
-    background-color: #fdfdd5;
+    background-color: #000;
     height: 30%;
     width: 100%;
+    color: white;
+    padding: 0;
+/*    font-size: 2em;*/
 }
 
 .footer {
     color: red;
     font-size: 2em;
+}
+
+.credits {
+    font-family: Raleway;
+    float: left;
+    width: 40%;
+    margin-top: -1%;
+    text-align: left;
+}
+
+.contact {
+    text-transform: uppercase;
+    width: 60%;
+    float: left;
+    text-align: right;
+    margin-top: -1%;
+    font-size: 1.1em;
+    font-family: Raleway;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: -1%;
+}
+
+
+/******************** CONTACT FORM MODAL *****************************/
+.contactModal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.contactModal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.contactModal > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { 
+    background: #00d9ff;
+}
+
+form {
+    margin: auto;
+    position: relative;
+    line-height: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea#message {
+    width: 100%;
+    height: 150px;
+    display: block;
+    overflow-y: hidden;
+    resize: none;
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+input[type="text"], input[type="email"] {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow-y: hidden;
+    -webkit-appearance: none;
+    outline: none;
+/*    border: 0;*/
+    padding: 0;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;    
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
