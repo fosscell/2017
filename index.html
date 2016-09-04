@@ -49,8 +49,8 @@
     <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link href="https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/icons.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
       
 <body>
@@ -404,12 +404,12 @@
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <h2>Contact the Event Organizers</h2>
-            <form method="post" id="ContactForm">
-                <input type="text" name="name" placeholder="Your Name" required /><br>
-                <input type="text" name="email" placeholder="Your Email" required /><br>
-                <textarea id="message" name="message" placeholder="Your Message here" required ></textarea><br>
-                <input type="submit" name="submit" value="Send" />
-            </form>
+            <form id="contactform" method="post">
+                <input id="name" name="name" type="text" placeholder="your name" required>
+                <input id="email" name="email" type="email" placeholder="your email" required>
+                <textarea id="message" name="message" rows="11" placeholder="Type your message here" required></textarea>   
+            </form>                                
+            <button class="button icon-plane" name="Send" form="contactform" type="submit" id="post"></button>
         </div>  
     </div>
     
