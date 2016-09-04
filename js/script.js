@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['main', 'About', 'Events', 'Speakers', 'Gallary', 'Location', 'Contact'],
+        anchors:['main', 'About', 'Events', 'Speakers', 'Gallary', 'Location'],
         navigation: false,
         navigationPosition: 'right',
         showActiveTooltip: true,
@@ -89,4 +89,5 @@ $(document).ready(function() {
     });
     
     mapConfig();
+//    validate();
 });

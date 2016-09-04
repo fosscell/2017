@@ -305,7 +305,7 @@ body{
 }
 
 .hovereffect h2 {
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     color: #000;
     text-align: center;
     position: relative;
@@ -315,6 +315,7 @@ body{
 /*    background: rgba(0, 0, 0, 0.6);*/
 	float: left;
 	margin: 0px;
+    max-width: 50%;
 	display: inline-block;
 }
 
@@ -322,7 +323,7 @@ body{
     display: inline-block;
     text-decoration: none;
     padding: 7px 14px;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
 /*	color: #fff;*/
 	border: 1px solid #fff;
 	margin: 50px 0 0 0;
@@ -458,12 +459,12 @@ body{
 
 
 .fp-auto-height {
-    background-color: #000;
-    height: 30%;
     width: 100%;
-    color: white;
-    padding: 0;
-/*    font-size: 2em;*/
+    padding: 3% 0;
+    margin-top: 10%;;
+    z-index: 1000;
+    height: 20%;
+    background-color: #3f7fcf;
 }
 
 .footer {
@@ -475,8 +476,9 @@ body{
     font-family: Raleway;
     float: left;
     width: 40%;
-    margin-top: -1%;
+/*    margin-top: -1%;*/
     text-align: left;
+    color: white;
 }
 
 .contact {
@@ -484,7 +486,7 @@ body{
     width: 60%;
     float: left;
     text-align: right;
-    margin-top: -1%;
+/*    margin-top: -1%;*/
     font-size: 1.1em;
     font-family: Raleway;
 }

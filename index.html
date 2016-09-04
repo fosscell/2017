@@ -48,6 +48,7 @@
     <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
     <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -272,7 +273,7 @@
                 <li class="card">
                     <a href="#">
                         <div class="image">
-                            <img src="img/events.JPG" style="height:auto">
+                            <a class="fancybox" rel="gallery1" href="img/exhibition.jpg"><img src="img/exhibition.jpg" style="height:auto"></a>
                         </div>
                         <div class="details">
                             <div class="header">Conclave</div>
@@ -288,7 +289,7 @@
                 <li class="card">
                     <a href="#">
                         <div class="image">
-                            <img src="img/events.JPG" style="height:auto">
+                            <a class="fancybox" rel="gallery1" href="img/exhibition.jpg"><img src="img/exhibition.jpg" style="height:auto"></a>
                         </div>
                         <div class="details">
                             <div class="header">Conclave</div>
@@ -304,7 +305,7 @@
                 <li class="card">
                     <a href="#">
                         <div class="image">
-                            <img src="img/events.JPG" style="height:auto">
+                            <a class="fancybox" rel="gallery1" href="img/exhibition.jpg"><img src="img/exhibition.jpg" style="height:auto"></a>
                         </div>
                         <div class="details">
                             <div class="header">Conclave</div>
@@ -320,7 +321,7 @@
                 <li class="card">
                     <a href="#">
                         <div class="image">
-                            <img src="img/events.JPG" style="height:auto">
+                            <a class="fancybox" rel="gallery1" href="img/exhibition.jpg"><img src="img/exhibition.jpg" style="height:auto"></a>
                         </div>
                         <div class="details">
                             <div class="header">Conclave</div>
@@ -336,7 +337,7 @@
                 <li class="card">
                     <a href="#">
                         <div class="image">
-                            <img src="img/events.JPG" style="height:auto">
+                            <a class="fancybox" rel="gallery1" href="img/exhibition.jpg"><img src="img/exhibition.jpg" style="height:auto"></a>
                         </div>
                         <div class="details">
                             <div class="header">Conclave</div>
@@ -352,7 +353,7 @@
                 <li class="card col span_1_of_4">
                     <a href="#">
                         <div class="image">
-                            <img src="img/events.JPG" style="height:auto">
+                            <a class="fancybox" rel="gallery1" href="img/exhibition.jpg"><img src="img/exhibition.jpg" style="height:auto"></a>
                         </div>
                         <div class="details">
                             <div class="header">Conclave</div>
@@ -368,7 +369,7 @@
                 <li class="card">
                     <a href="#">
                         <div class="image">
-                            <img src="img/exhibition.jpg" style="height:auto">
+                            <a class="fancybox" rel="gallery1" href="img/exhibition.jpg"><img src="img/exhibition.jpg" style="height:auto"></a>
                         </div>
                         <div class="details">
                             <div class="header">Conclave</div>
@@ -385,27 +386,29 @@
         </div>
         
         <div class="section" id="section5">
-            <div class="container" id="map">
+            <div class="container">
+                <div id="map">
+                </div>
+                <div class="fp-auto-height">
+                    <div class="wrapper">
+                        <div class="credits">Creative and Intellectual minds of NIT Calicut</div>
+                        <div class="contact"><a href="#contactForm">contact the organiser</a></div>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class="section fp-auto-height" id="section6">
-            <div class="wrapper">
-                <div class="credits">Creative and Intellectual minds of NIT Calicut</div>
-                <div class="contact"><a href="#contactForm">contact the organiser</a></div>
-            </div>
-        </div>
     </div>
     
     <div id="contactForm" class="contactModal">
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <h2>Contact the Event Organizers</h2>
-            <form action="contact.php" method="post">
-                <input type="text" name="name" placeholder="Your Name"><br>
-                <input type="text" name="email" placeholder="Your Email"><br>
-                <textarea id="message" name="message" placeholder="Your Message here"></textarea><br>
-                <input type="submit" value="Send">
+            <form method="post" id="ContactForm">
+                <input type="text" name="name" placeholder="Your Name" required /><br>
+                <input type="text" name="email" placeholder="Your Email" required /><br>
+                <textarea id="message" name="message" placeholder="Your Message here" required ></textarea><br>
+                <input type="submit" name="submit" value="Send" />
             </form>
         </div>  
     </div>
@@ -416,7 +419,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/vendors/scrolloverflow.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/vendors/jquery.easings.min.js"></script>
     <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
-    <script src="js/mapConfig.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/mapConfig.js"></script>
+<!--    <script type="text/javascript" src="js/validate.js"></script>-->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
