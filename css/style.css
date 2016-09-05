@@ -175,10 +175,11 @@ body{
 .section-head {
     position: relative;
     text-align: center;
-    font-size: 4em;
-    max-width: 20%;
+    font-size: 2em;
+    max-width: 40%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4%;
 }
 
 /*
@@ -401,7 +402,7 @@ body{
 
 .card {
     font-size: 1em;
-    width: calc(25% - 1.5em);
+    width: calc(20% - 1.5em);
     margin-left: 0.75em;
     margin-right: 0.75em;
 /*    box-shadow: rgb(212, 212, 213) 0px 1px 3px 0px, rgb(212, 212, 213) 0px 0px 0px 1px;*/

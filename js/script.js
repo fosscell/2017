@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['main', 'About', 'Events', 'Speakers', 'Gallary', 'Location'],
+        anchors:['Main', 'About', 'Events', 'Speakers', 'Gallary', 'Location'],
         navigation: false,
         navigationPosition: 'right',
         showActiveTooltip: true,
@@ -11,11 +11,12 @@ $(document).ready(function() {
         slidesNavPosition: 'bottom',
 
         //Scrolling
+        scrollDelay: 2000,
         css3: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 900,
         autoScrolling: true,
         fitToSection: true,
-        fitToSectionDelay: 1000,
+        fitToSectionDelay: 4000,
         scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
@@ -64,8 +65,8 @@ $(document).ready(function() {
     });
     
     $("#lightSlider").lightSlider({
-        item:3,
-        loop:false,
+        item:4,
+        loop:true,
         slideMove:1,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed:600,
