@@ -1,0 +1,213 @@
+@media only screen and (max-width: 799px) {
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    img, video, audio, iframe, object {
+        max-width: 100%
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans',helvetica;
+        color: #333;
+        color: rgba(0,0,0,0.5);
+        font-size: 100.5%;
+        overflow-x: hidden;
+    }
+
+    .section{
+        margin: 0;
+        font-size: 80%;
+        max-width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+        margin-bottom: 9%;
+    }
+
+    .menu-btn {
+        max-width: 100%;
+        margin-left: 3%;
+    }
+
+    .menu-btn:after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+
+    .menu-btn div {
+        line-height: 1.2;
+        font-size: 1.5em;
+        z-index: 99;
+    /*    margin: 1em 5em;*/
+    }
+
+    .menu-btn span {
+        display: block;
+        width: 2em;
+        height: 0.2em;
+        margin: 0.25em 0;
+        background: #000;
+        z-index: 99;
+    }
+
+    .responsive-menu {
+        display: none;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    .responsive-menu ul {
+        margin: 0;
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .responsive-menu ul li {
+        margin: 0;
+        display: block;
+        padding: 0 1.69492%;
+        background: #f3f3f3;
+        border-bottom: 2px solid #e4e4e4;
+    }
+
+    .expand {
+        display: block !important;
+    }
+
+    .content {
+        position: relative;
+        color: white;
+        font-size: 1.3em;
+        max-width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .content .info {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .arrows {
+        visibility: hidden;
+    }
+
+    .data {
+        font-size: 1em;
+        max-width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .section-head {
+        text-transform: uppercase;
+        font-weight: bolder;
+        position: relative;
+        text-align: center;
+        font-size: 2em;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .data1 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #section0 {
+        height: 100vh;
+        background-color: #464646;
+        background-image: url("../img/3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .header {
+        padding: 1%;
+        padding-bottom: 4%;
+        width: 100%;
+        background-color: red;
+        margin-bottom: -3%;
+        display: block;
+    }
+
+    .wrap {
+        position: absolute;
+        top: 20%;
+    }
+
+    .photo {
+        width: 80%;
+        display: inline-block;
+        margin-bottom: 4%;
+    }
+
+    .hovereffect {
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        cursor: default;
+        margin: auto;
+    }
+
+    .hovereffect .overlay {
+        width: 100%;
+        height: 50%;
+    }
+
+    .hovereffect img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .hovereffect h2 {
+        color: #000;
+        text-align: center;
+    }
+
+    .icon-links {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4%;
+    }
+
+    .icon-links a span {
+        margin-left: 1em;
+        margin-right: 1em;
+        color: #000;
+        font-size: 1.4em;
+    }
+
+    .divider {
+        height: 2px;
+        background-color: black;
+        width: 50%;
+        margin: auto;
+    }
+}

@@ -63,8 +63,8 @@
 	background: black;
 }
 a.highslide-full-expand {
-   background: url(../img/graphics/fullexpand.gif) no-repeat;
-   display: block;
+/*   background: url(../img/graphics/fullexpand.gif) no-repeat;*/
+   display: none;
    margin: 0 10px 10px 0;
    width: 34px;
    height: 34px;

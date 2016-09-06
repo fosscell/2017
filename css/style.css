@@ -1,4 +1,5 @@
-*, ::after, ::before {
+@media only screen and (min-width: 800px) {
+    *, ::after, ::before {
     box-sizing: inherit;
 }
 
@@ -440,12 +441,7 @@ body{
     text-align: left;
 }
 
-.header {
-    text-align: left;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
-}
+
 
 .details > .meta {
     text-align: left;
@@ -630,4 +626,6 @@ input:focus::-webkit-input-placeholder {
 
 #post:hover {
     color: #ff1a29;
+}
+
 }

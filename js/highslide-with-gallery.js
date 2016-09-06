@@ -2303,16 +2303,16 @@ destroyOverlays : function() {
 
 createFullExpand : function () {
 	if (this.slideshow && this.slideshow.controls) {
-		this.slideshow.enable('full-expand');
+//		this.slideshow.enable('full-expand');
 		return;
 	}
-	this.fullExpandLabel = hs.createElement(
-		'a', {
-			href: 'javascript:hs.expanders['+ this.key +'].doFullExpand();',
-			title: hs.lang.fullExpandTitle,
-			className: 'highslide-full-expand'
-		}
-	);
+//	this.fullExpandLabel = hs.createElement(
+//		'a', {
+//			href: 'javascript:hs.expanders['+ this.key +'].doFullExpand();',
+//			title: hs.lang.fullExpandTitle,
+////			className: 'highslide-full-expand'
+//		}
+//	);
 	
 	this.createOverlay({ 
 		overlayId: this.fullExpandLabel, 
