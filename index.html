@@ -41,37 +41,44 @@
     <![endif]-->
 
     <!--Font CSS-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans' />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 
     <!--Custom CSS-->
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.css">
-    <link href="https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/highslide.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-    <div class="header">
-        <div class="menu-btn" id="menu-btn">
-            <div></div>
-            <span></span>
-            <span></span>
-            <span></span>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" id="menu-btn">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav pull-right" id="menu">
+                  <li data-menuanchor="Main" class="active"><a href="#Main">Home</a></li>
+                  <li data-menuanchor="About"><a href="#About">About FOSSMeet</a></li>
+                  <!--<li data-menuanchor="Events"><a href="#Events">Previous Events</a></li>-->
+                  <li data-menuanchor="Speakers"><a href="#Speakers">Previous Speakers</a></li>
+                  <li data-menuanchor="Sponsors"><a href="#Sponsors">Previous Sponsors</a></li>
+                  <li data-menuanchor="Location"><a href="#Location">Reach Us</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="responsive-menu normal">
-            <ul id="menu">
-                <li data-menuanchor="Main" class="active"><a href="#Main">Home</a></li>
-                <li data-menuanchor="About"><a href="#About">About FOSSMeet</a></li>
-                <!--<li data-menuanchor="Events"><a href="#Events">Previous Events</a></li>-->
-                <li data-menuanchor="Speakers"><a href="#Speakers">Previous Speakers</a></li>
-                <li data-menuanchor="Sponsors"><a href="#Sponsors">Previous Sponsors</a></li>
-                <li data-menuanchor="Location"><a href="#Location">Reach Us</a></li>
-            </ul>
-        </div>
-    </div>
+    </nav>
 
     <div id="fullpage">
 
@@ -92,7 +99,7 @@
 
         <div class="section" id="section1">
             <div class="container">
-                <div class="section-head">About</div>
+                <div class="section-head">About FOSSMeet</div>
                 <div class="data">FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut. Started in 2005 as FLOSS(Free/Libre Open Source Software) Meet with a vision to create a culture of innovation, evolution and open standards, the meet intends to support the FOSS community, open education system and dissemination of FOSS ideology. The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects.</div>
             </div>
             <div class="divider"></div>
@@ -272,9 +279,46 @@
 
         <div class="section" id="section4">
           <div class="container">
-                <div class="section-head">Previous Sponsors</div>
-                <div class="data1">
-                    <p>The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects. Upholding the philosophy of FOSS, the event has talks and workshops dealing with the current trends in FOSS and open hardware, hands-on sessions to develop skills and a place to meet like minded people.</p>
+                <!--<div class="section-head">Previous Sponsors</div>-->
+                <div class="grid">
+                  <div class="photo">
+                      <div class="hovereffect col-1-4">
+                          <img class="img-responsive" src="img/sponsors/concur.png" alt="">
+                          <div class="overlay">
+                              <h2>Sponsor Name</h2>
+                              <p class="icon-links">
+                                <a href="#">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="photo">
+                      <div class="hovereffect col-1-4">
+                          <img class="img-responsive" src="img/sponsors/icfoss.png" alt="">
+                          <div class="overlay">
+                              <h2>Sponsor Name</h2>
+                              <p class="icon-links">
+                                <a href="#">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
                 </div>
           </div>
           <div class="divider"></div>
@@ -310,15 +354,16 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/lightslider.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/vendors/scrolloverflow.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/vendors/jquery.easings.min.js"></script>
-    <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.js"></script>
+    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/leaflet.js"></script>
     <script type="text/javascript" src="js/mapConfig.js"></script>
     <script type="text/javascript" src="js/highslide-with-gallery.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/validate.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
