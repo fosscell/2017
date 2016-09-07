@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
-        lockAnchors: false,
+        lockAnchors: true,
         anchors:['Main', 'About', 'Speakers', 'Sponsors', 'Location'],
         navigation: false,
         navigationPosition: 'right',
@@ -62,6 +62,10 @@ $(document).ready(function() {
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    });
+
+    $('#menu li').click(function(){
+        $.fn.fullpage.moveTo($(this).attr('data-menuanchor'), 1);
     });
 
     $("#lightSlider").lightSlider({
