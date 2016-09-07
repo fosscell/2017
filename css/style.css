@@ -622,3 +622,9 @@ input:focus::-webkit-input-placeholder {
 #post:hover {
     color: #ff1a29;
 }
+
+.img-responsive {
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+}
