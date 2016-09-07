@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: true,
-        anchors:['Main', 'About', 'Speakers', 'Sponsors', 'Location'],
+        anchors:['Main', 'About', 'Events', 'Speakers', 'Gallary', 'Location'],
         navigation: false,
         navigationPosition: 'right',
         showActiveTooltip: true,
@@ -49,7 +49,7 @@ $(document).ready(function() {
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
-        responsiveSlides: true,
+        responsiveSlides: false,
 
         //Custom selectors
         sectionSelector: '.section',
@@ -63,14 +63,16 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-
-    $('#menu li').click(function(){
-        $.fn.fullpage.moveTo($(this).attr('data-menuanchor'), 1);
+    
+    $( '#menu-btn' ).click(function(){
+        $('.responsive-menu').toggleClass('expand');
     });
+    mapConfig();
+});
 
-    $("#lightSlider").lightSlider({
+   $("#lightSlider").lightSlider({
         item:4,
-        loop:true,
+        //loop:true,
         slideMove:1,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed:600,
@@ -92,12 +94,6 @@ $(document).ready(function() {
             }
         ]
     });
-
-    $( '#menu-btn' ).click(function(){
-        $('.responsive-menu').toggleClass('expand');
-    });
-    mapConfig();
-});
 
 hs.graphicsDir = 'img/graphics/';
 hs.align = 'center';
