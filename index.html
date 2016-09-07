@@ -50,37 +50,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.css">
     <link href="https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/icons.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/highslide.css" />
-    <link rel="stylesheet" type="text/css" href="css/mobileStyle.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-      
+
 <body>
     <div class="header">
-        <div class="menu-btn" id="menu-btn"> 
-            <div></div> 
-            <span></span> 
-            <span></span> 
-            <span></span> 
+        <div class="menu-btn" id="menu-btn">
+            <div></div>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div class="responsive-menu normal">
             <ul id="menu">
                 <li data-menuanchor="Main" class="active"><a href="#Main">Home</a></li>
-                <li data-menuanchor="About"><a href="#About">About</a></li>
-                <li data-menuanchor="Events"><a href="#Events">Events</a></li>
-                <li data-menuanchor="Speakers"><a href="#Speakers">Speakers</a></li>
-        <!--        <li data-menuanchor="Sponsors"><a href="#Sponsers">Sponsorship</a></li>-->
-                <li data-menuanchor="Gallary"><a href="#Gallary">Gallary</a></li>
-                <li data-menuanchor="Location"><a href="#Location">Location</a></li>
+                <li data-menuanchor="About"><a href="#About">About FOSSMeet</a></li>
+                <li data-menuanchor="Events"><a href="#Events">Previous Events</a></li>
+                <li data-menuanchor="Speakers"><a href="#Speakers">Previous Speakers</a></li>
+                <li data-menuanchor="Sponsors"><a href="#Sponsors">Previous Sponsors</a></li>
+                <li data-menuanchor="Location"><a href="#Location">Reach Us</a></li>
             </ul>
         </div>
     </div>
-    
+
     <div id="fullpage">
+
         <div class="section active" id="section0">
             <div class="content container">
                 <div class="wrap">
                 <h1 class="main-head">FOSSMEET '17 NIT CALICUT</h1>
-                <p class="info">PyCon India, the premier conference in India on using and developing the Python programming language is conducted annually by the Python developer community. It attracts the best Python programmers from across the country and abroad.</p>
+                <p class="info">FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut.</p>
                     </div>
             </div>
 
@@ -90,6 +89,7 @@
                 <path class="a3" d="M0 40 L30 72 L60 40"></path>
             </svg>
         </div>
+
         <div class="section" id="section1">
             <div class="container">
                 <div class="section-head">About</div>
@@ -97,17 +97,73 @@
             </div>
             <div class="divider"></div>
         </div>
-        
+
         <div class="section" id="section2">
             <div class="container">
-                  <div class="section-head">Events</div>
+                  <div class="section-head">Previous Events</div>
                   <div class="data1">
-                      <p>The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects. Upholding the philosophy of FOSS, the event has talks and workshops dealing with the current trends in FOSS and open hardware, hands-on sessions to develop skills and a place to meet like minded people.</p>
+                    <ul class="cards" id="lightSlider">
+                        <li class="card">
+                            <a href="img/1.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/1.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/2.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/2.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/3.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/3.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/4.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/4.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/5.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/5.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/6.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/6.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/7.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/7.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/1.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/1.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/2.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/2.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/3.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/3.jpg">
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="img/4.jpg" class="highslide" onclick="return hs.expand(this)">
+                                <img src="img/4.jpg">
+                            </a>
+                        </li>
+                    </ul>
                   </div>
             </div>
             <div class="divider"></div>
         </div>
-        
+
         <div class="section" id="section3">
             <div class="container">
                   <div class="section-head">Previous Speakers</div>
@@ -268,70 +324,17 @@
               </div>
             <div class="divider"></div>
         </div>
-        
-        
-<!--
+
         <div class="section" id="section4">
-            <ul class="container cards" id="lightSlider">
-                <li class="card">
-                    <a href="img/1.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/1.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/2.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/2.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/3.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/3.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/4.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/4.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/5.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/5.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/6.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/6.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/7.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/7.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/1.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/1.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/2.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/2.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/3.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/3.jpg">
-                    </a>
-                </li>
-                <li class="card">
-                    <a href="img/4.jpg" class="highslide" onclick="return hs.expand(this)">
-                        <img src="img/4.jpg">
-                    </a>
-                </li>
-            </ul>
+          <div class="container">
+                <div class="section-head">Previous Sponsors</div>
+                <div class="data1">
+                    <p>The event will feature a wide range of workshops, discussions and lectures by eminent personalities. FOSSMeet will also consist of various hands-on sessions which would help in contributing to various open source projects. Upholding the philosophy of FOSS, the event has talks and workshops dealing with the current trends in FOSS and open hardware, hands-on sessions to develop skills and a place to meet like minded people.</p>
+                </div>
+          </div>
+          <div class="divider"></div>
         </div>
--->
-        
+
         <div class="section" id="section5">
             <div class="container">
                 <div id="map">
@@ -344,22 +347,22 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
-    
+
     <div id="contactForm" class="contactModal">
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <h2>Contact the Event Organizers</h2>
-            <form id="contactform" method="post">
+            <form id="contactform" method="POST" onsubmit="SendMail();return false;">
                 <input id="name" name="name" type="text" placeholder="your name" required>
                 <input id="email" name="email" type="email" placeholder="your email" required>
-                <textarea id="message" name="message" rows="11" placeholder="Type your message here" required></textarea>   
-            </form>                                
+                <textarea id="message" name="message" rows="11" placeholder="Type your message here" required></textarea>
+            </form>
             <button class="button icon-plane" name="Send" form="contactform" type="submit" id="post"></button>
-        </div>  
+        </div>
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.5/jquery.fullPage.js"></script>
@@ -368,31 +371,9 @@
     <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
     <script type="text/javascript" src="js/mapConfig.js"></script>
     <script type="text/javascript" src="js/highslide-with-gallery.js"></script>
-<!--    <script type="text/javascript" src="js/validate.js"></script>-->
-    <script src="js/responsive-nav.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript">
-        hs.graphicsDir = 'img/graphics/';
-        hs.align = 'center';
-        hs.transitions = ['expand', 'crossfade'];
-        hs.wrapperClassName = 'dark borderless floating-caption';
-        hs.fadeInOut = true;
-        hs.dimmingOpacity = .75;
-
-        // Add the controlbar
-        if (hs.addSlideshow) hs.addSlideshow({
-            //slideshowGroup: 'group1',
-            interval: 5000,
-            repeat: false,
-            useControls: true,
-            fixedControls: 'fit',
-            overlayOptions: {
-                opacity: .6,
-                position: 'bottom center',
-                hideOnMouseOut: true
-            }
-        });
-    </script>
 
 </body>
 </html>

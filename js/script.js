@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['Main', 'About', 'Events', 'Speakers', 'Gallary', 'Location'],
+        anchors:['Main', 'About', 'Events', 'Speakers', 'Sponsors', 'Location'],
         navigation: false,
         navigationPosition: 'right',
         showActiveTooltip: true,
@@ -49,7 +49,7 @@ $(document).ready(function() {
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
-        responsiveSlides: false,
+        responsiveSlides: true,
 
         //Custom selectors
         sectionSelector: '.section',
@@ -63,7 +63,7 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-    
+
     $("#lightSlider").lightSlider({
         item:4,
         loop:true,
@@ -88,10 +88,56 @@ $(document).ready(function() {
             }
         ]
     });
-    
+
     $( '#menu-btn' ).click(function(){
         $('.responsive-menu').toggleClass('expand');
     });
-//    mapConfig();
-//    validate();
+    mapConfig();
 });
+
+hs.graphicsDir = 'img/graphics/';
+hs.align = 'center';
+hs.transitions = ['expand', 'crossfade'];
+hs.wrapperClassName = 'dark borderless floating-caption';
+hs.fadeInOut = true;
+hs.dimmingOpacity = .75;
+
+// Add the controlbar
+if (hs.addSlideshow) hs.addSlideshow({
+    //slideshowGroup: 'group1',
+    interval: 5000,
+    repeat: false,
+    useControls: true,
+    fixedControls: 'fit',
+    overlayOptions: {
+        opacity: .6,
+        position: 'bottom center',
+        hideOnMouseOut: true
+    }
+});
+
+var RequestData = function(type, URL, formData, callBack){
+  // create a XHR object
+  var xhr = new XMLHttpRequest();
+  // open the XHR object in asynchronous mode
+  xhr.open(type, URL, true);
+  if(type == "POST"){
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=ISO-8859-1');
+  }
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      // OK! we have a successful response.
+      var response = xhr.responseText;
+      //console.log('OUTPUT: ' + response);
+      // do something else with the response
+      callBack(URL, response);
+    }
+  };
+  // GET or POST the URL according to type
+  if(type == "GET"){
+    xhr.send();
+  }
+  if(type == "POST"){
+    xhr.send(formData);
+  }
+};
