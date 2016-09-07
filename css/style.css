@@ -493,8 +493,8 @@ textarea#message {
     padding: 0;
     font-family: 'Josefin Sans';
 }
-#email,
-#name {
+#fromemail,
+#fromname {
     height: 22px;
     width: 100%;
     background: url('../img/dots.png') repeat top;
@@ -563,4 +563,7 @@ input:focus::-webkit-input-placeholder {
 
 .slidereImg {
    height: 35em;   
+}
+.container {
+    padding-left: 0px;
 }

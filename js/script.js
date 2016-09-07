@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: true,
-        anchors:['Main', 'About', 'Events', 'Speakers', 'Gallary', 'Location'],
+        anchors:['Main', 'About', 'Events', 'Speakers', 'Sponsors', 'Location'],
         navigation: false,
         navigationPosition: 'right',
         showActiveTooltip: true,
@@ -67,12 +67,16 @@ $(document).ready(function() {
     $( '#menu-btn' ).click(function(){
         $('.responsive-menu').toggleClass('expand');
     });
+    
+    $('#menu li').click(function(){
+         $.fn.fullpage.moveTo($(this).attr('data-menuanchor'), 1);
+     });
     mapConfig();
 });
 
    $("#lightSlider").lightSlider({
         item:4,
-        //loop:true,
+        loop:true,
         slideMove:1,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed:600,
@@ -143,7 +147,9 @@ var RequestData = function(type, URL, formData, callBack){
     xhr.send(formData);
   }
 };
-
+if(document.getElementById('obfuscaytedEMailID')){
+    document.getElementById('obfuscaytedEMailID').innerHTML = String.fromCharCode(105,110,102,111,64,102,111,115,115,109,101,101,116,46,105,110);
+}
 var SENDMAIL_URL = "./lib/send-mail.php";
 
 var SendEmail = function(){
