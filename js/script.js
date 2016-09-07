@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['Main', 'About', 'Events', 'Speakers', 'Sponsors', 'Location'],
+        anchors:['Main', 'About', 'Speakers', 'Sponsors', 'Location'],
         navigation: false,
         navigationPosition: 'right',
         showActiveTooltip: true,
@@ -121,9 +121,11 @@ var RequestData = function(type, URL, formData, callBack){
   var xhr = new XMLHttpRequest();
   // open the XHR object in asynchronous mode
   xhr.open(type, URL, true);
-  if(type == "POST"){
-    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=ISO-8859-1');
-  }
+  /*
+    if(type == "POST"){
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=ISO-8859-1');
+    }
+  */
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       // OK! we have a successful response.
@@ -140,4 +142,19 @@ var RequestData = function(type, URL, formData, callBack){
   if(type == "POST"){
     xhr.send(formData);
   }
+};
+
+var SENDMAIL_URL = "./lib/send-mail.php";
+
+var SendEmail = function(){
+  var formElement = document.querySelector("#contactform");
+  var formData = new FormData(formElement);
+  RequestData("POST", SENDMAIL_URL, formData, function(u, r){
+    if(r.indexOf("success") != -1){
+      alert("we are processing your update, and will get back to you as soon as possible");
+    }
+    else{
+      alert("error(s) occured\n-----\n" + r + "\n-----\n");
+    }
+  });
 };

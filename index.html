@@ -65,7 +65,7 @@
             <ul id="menu">
                 <li data-menuanchor="Main" class="active"><a href="#Main">Home</a></li>
                 <li data-menuanchor="About"><a href="#About">About FOSSMeet</a></li>
-                <li data-menuanchor="Events"><a href="#Events">Previous Events</a></li>
+                <!--<li data-menuanchor="Events"><a href="#Events">Previous Events</a></li>-->
                 <li data-menuanchor="Speakers"><a href="#Speakers">Previous Speakers</a></li>
                 <li data-menuanchor="Sponsors"><a href="#Sponsors">Previous Sponsors</a></li>
                 <li data-menuanchor="Location"><a href="#Location">Reach Us</a></li>
@@ -98,11 +98,11 @@
             <div class="divider"></div>
         </div>
 
-        <div class="section" id="section2">
+      <!--  <div class="section" id="section2">
             <div class="container">
                   <div class="section-head">Previous Events</div>
-                  <div class="data1">
-                    <ul class="cards" id="lightSlider">
+
+                    <ul class="container cards" id="lightSlider">
                         <li class="card">
                             <a href="img/1.jpg" class="highslide" onclick="return hs.expand(this)">
                                 <img src="img/1.jpg">
@@ -138,31 +138,12 @@
                                 <img src="img/7.jpg">
                             </a>
                         </li>
-                        <li class="card">
-                            <a href="img/1.jpg" class="highslide" onclick="return hs.expand(this)">
-                                <img src="img/1.jpg">
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="img/2.jpg" class="highslide" onclick="return hs.expand(this)">
-                                <img src="img/2.jpg">
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="img/3.jpg" class="highslide" onclick="return hs.expand(this)">
-                                <img src="img/3.jpg">
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="img/4.jpg" class="highslide" onclick="return hs.expand(this)">
-                                <img src="img/4.jpg">
-                            </a>
-                        </li>
+
                     </ul>
-                  </div>
+
             </div>
             <div class="divider"></div>
-        </div>
+        </div>-->
 
         <div class="section" id="section3">
             <div class="container">
@@ -354,9 +335,11 @@
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <h2>Contact the Event Organizers</h2>
-            <form id="contactform" method="POST" onsubmit="SendMail();return false;">
-                <input id="name" name="name" type="text" placeholder="your name" required>
-                <input id="email" name="email" type="email" placeholder="your email" required>
+            <form id="contactform" method="POST" onsubmit="SendEmail();return false;">
+                <input type="hidden" name="toemail" value="info@fossmeet.in">
+                <input type="hidden" name="subject" value="message from FOSSMeet 17 website">
+                <input id="fromname" name="fromname" type="text" placeholder="your name" required>
+                <input id="fromemail" name="fromemail" type="email" placeholder="your email" required>
                 <textarea id="message" name="message" rows="11" placeholder="Type your message here" required></textarea>
             </form>
             <button class="button icon-plane" name="Send" form="contactform" type="submit" id="post"></button>
