@@ -36,7 +36,7 @@ $('#ContactForm').validate({
         $(form).ajaxSubmit({
             type:"POST",
             data: $(form).serialize(),
-            url:"./lib/mail.php",
+            url:"./lib/send-mail.php",
             success: function() {
                 $('#ContactForm :input').attr('disabled', 'disabled');
                 $('#ContactForm').fadeTo( "slow", 0.15, function() {
