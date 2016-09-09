@@ -490,9 +490,31 @@
                 </div>
                 <div class="fp-auto-height">
                     <div class="wrapper">
-                        <div class="credits"><i class="fa fa-copyright fa-flip-horizontal"></i> Creative and Intellectual minds of NIT Calicut</div>
-
-                        <div class="contact"><a href="#contactForm">contact the organiser(s)</a></div>
+                        <div class="credits">
+                          <i class="fa fa-copyright fa-flip-horizontal"></i>
+                          Creative and Intellectual minds of NIT Calicut
+                        </div>
+                        <div class="sociallinks">
+                          <a href="mailto:fossmeet@poddery.com" class="fa fa-diasp">
+                            <span class="fa-stack fa-lg">
+                              <span class="fa fa-star-o fa-stack-2x"></span>
+                              <span class="fa fa-fw fa-stack-1x"><strong>D</strong></span>
+                            </span>
+                            <span class="label">Diaspora</span>
+                          </a>
+                          <a href="https://fb.me/FOSSMeet" class="fa fa-facebook fa-2x"><span class="label">Facebook</span></a>
+                          <a href="http://www.flickr.com/search/?q=fossmeet" class="fa fa-flickr fa-2x"><span class="label">Flickr</span></a>
+                          <!--<a href="https://github.com/fosscell" class="fa fa-github fa-2x"><span class="label">GitHub</span></a>
+                          <a href="https://gitlab.com/groups/fosscell" class="fa fa-gitlab fa-2x"><span class="label">GitLab</span></a>-->
+                          <a href="https://plus.google.com/109660182976357345132" class="fa fa-google-plus fa-2x"><span class="label">Google+</span></a>
+                          <a href="https://twitter.com/fossmeet" class="fa fa-twitter fa-2x"><span class="label">Twitter</span></a>
+                          <a href="https://www.youtube.com/channel/UCwfNynjOSd3oPwIFqduJ9-Q" class="fa fa-youtube fa-2x"><span class="label">YouTube</span></a>
+                        </div>
+                        <div class="contact">
+                          <a href="#" data-toggle="modal" data-target="#contactFormModal">
+                            contact the organiser(s)
+                          </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -500,21 +522,48 @@
 
     </div>
 
-    <div id="contactForm" class="contactModal">
-        <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>Contact the Event Organizers</h2>
+    <!-- contact form -->
+    <div id="contactFormModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Contact the Event Organizers</h4>
+          </div>
+          <div class="modal-body">
             <form id="contactform" method="POST" onsubmit="SendEmail();return false;">
                 <input type="hidden" name="toemail" value="info@fossmeet.in">
                 <input type="hidden" name="subject" value="message from FOSSMeet 17 website">
                 <input id="fromname" name="fromname" type="text" placeholder="your name" required>
                 <input id="fromemail" name="fromemail" type="email" placeholder="your email" required>
                 <textarea id="message" name="message" rows="11" placeholder="Type your message here" required></textarea>
-                <p>You can also reach us at: <span id="obfuscaytedEMailID"></span></p>
                 <button class="button icon-plane" name="Send" form="contactform" type="submit" id="post"></button>
             </form>
-
+          </div>
+          <div class="modal-footer">
+            <p>You can also reach us at: <span id="obfuscaytedEMailID"></span></p>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- pdf viewer -->
+    <div id="pdfViewModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Marketing Brochure</h4>
+          </div>
+          <div class="modal-body">
+            <iframe src="http://docs.google.com/viewer?embedded=true&hl=en&url=//path/to/marketing/brochure.pdf" width='100%' height='100%'>
+            </iframe>
+          </div>
+          <!--<div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>-->
+        </div>
+      </div>
     </div>
 
     <script type="text/javascript" src="js/jquery.js"></script>
