@@ -1803,7 +1803,7 @@
             var t, i, n, o, s = e.getElementsByTagName("script"),
                 r = /[\/^]leaflet[\-\._]?([\w\-\._]*)\.js\??/;
             for (t = 0, i = s.length; t < i; t++)
-                if (n = s[t].src || "", n.match(r)) return o = n.split(r)[0], (o ? o + "/../" : "") + "img"
+                if (n = s[t].src || "", n.match(r)) return o = n.split(r)[0], (o ? o + "/../" : "") + "img/graphics"
         }(), o.Marker = o.Layer.extend({
             options: {
                 icon: new o.Icon.Default,

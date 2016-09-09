@@ -180,7 +180,7 @@ body {
     max-width: 40%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 .section-head-line {
     position: absolute;
@@ -480,7 +480,7 @@ body {
 textarea#message {
     margin-top: 2em;
     width: 100%;
-    background: url('../img/dots.png') repeat top;
+    background: url('../img/graphics/dots.png') repeat top;
     max-height: 30%;
     line-height: 21px;
     color: #666;
@@ -497,7 +497,7 @@ textarea#message {
 #fromname {
     height: 22px;
     width: 100%;
-    background: url('../img/dots.png') repeat top;
+    background: url('../img/graphics/dots.png') repeat top;
     min-height: 100%;
     line-height: 21px;
     color: #666;
