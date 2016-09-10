@@ -225,16 +225,25 @@
       margin-top: 3%;
   }
   .photo {
-    width: 25%;
-    padding: 1%;
+    width: 23%;
+    padding: 0.6%;
+    margin: 10px;
     display: inline;
     float: left;
+    border: solid 1px #EFEFEF;
 }
 
 .photo:after {
   content: "";
   display: table;
   clear: both;
+}
+    
+.photo:hover {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
 }
 
 .hovereffect {
@@ -245,6 +254,7 @@
     position: relative;
     text-align: center;
     cursor: default;
+    
 }
 
 .hovereffect .overlay {
@@ -307,9 +317,10 @@
 }
 
 .hovereffect p.icon-links a {
+    margin-top: 15px;
 	float: right;
 	color: #3c4a50;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 .hovereffect:hover p.icon-links a:hover,
