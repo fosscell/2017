@@ -4,13 +4,16 @@ $(document).ready(function() {
         menu: '#menu',
         lockAnchors: true,
         anchors:['Main', 'About', 'Events', 'Speakers', 'Sponsors', 'Location'],
-        navigation: false,
+        navigation: true,
         navigationPosition: 'right',
         showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
-
+        fadingEffect:true,
+        faddingEffect:'sections',
+        
         //Scrolling
+        continuousHorizontal:true,
         scrollDelay: 2000,
         css3: true,
         scrollingSpeed: 900,
@@ -43,7 +46,7 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor : ['#eae8dd', '#4BBFC3', '#7BAABE', 'whitesmoke', '#f4f2f0'],
+//        sectionsColor : ['#eae8dd', '#4BBFC3', '#7BAABE', 'whitesmoke', '#f4f2f0'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',

@@ -59,12 +59,8 @@
       margin-right: auto;
       text-align: center;
       padding-bottom: 10%;
-      -webkit-animation: fadein 2s;
-      -moz-animation: fadein 2s;
-      -ms-animation: fadein 2s;
-      -o-animation: fadein 2s;
-      animation: fadein 2s;
   }
+    
   .content .info {
       font-size: 0.6em;
   }
@@ -164,25 +160,31 @@
       -webkit-animation-delay: 0s;
   }
   .data {
+      padding: 2%;
+      margin-left: 3%;
+/*      border: 1px solid red;*/
       margin-top: 4%;
-      font-size: 20px;
-      padding: 30px;
+      font-size: 2em;
       float: left;
-      width: 40%;
+      width: 55%;
   }
   .container {
+      margin-top: 1%;
       width: 100%;
       margin: auto;
       height: 100%;
   }
   .section-head {
-      position: relative;
-      text-align: center;
-      font-size: 2em;
-      max-width: 40%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 2%;
+      display: table-cell;
+      vertical-align: middle;
+      height: 7em;
+      line-height: 7em;
+      text-transform: uppercase;
+      margin-top: 9%;
+      font-size: 3em;
+      float: left;
+      width: 40%;
+      border-right: 2px solid red;
   }
   .section-head-line {
       position: absolute;
@@ -263,10 +265,8 @@
 }
 
 .hovereffect img {
-    max-height: 100%;
-    max-width: 100%;
-    display: block;
-    position: relative;
+    height: 100%;
+    width: 100%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -453,7 +453,7 @@
   .wrapper {
       width: 80%;
       margin: auto;
-      margin-top: -1%;
+      margin-top: -9%;
   }
   .contactModal {
       position: fixed;
@@ -590,15 +590,52 @@
   display: none;
 }
 
-.wrapper .picture img {
-    width: 50%;
-    height: 50%;
-}
-
 #section0 {
     background-color: gray;
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+.main-head {
+    -webkit-animation: fadein 2s;
+      -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+      -o-animation: fadein 2s;
+      animation: fadein 2s;
+}
+
+.info {
+    -webkit-animation: fadein 4s;
+      -moz-animation: fadein 4s;
+      -ms-animation: fadein 4s;
+      -o-animation: fadein 4s;
+      animation: fadein 4s;
+}
+
+.picture {
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    width: 700px;
+    height: 400px;
+}
+
+.picture img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height:100%;
+    box-shadow: 8px 8px 10px #aaa;
+}
+
+.info {
+    padding-top: 4%;
+    height: 40px;
+    font-size: 2em;
+}
+
+img {
+    
 }
