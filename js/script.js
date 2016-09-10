@@ -1,67 +1,88 @@
 $(document).ready(function() {
-//    if (screen && screen.width >= 800) {
-//        $('#fullpage').fullpage({
-//            menu: '#menu',
-//            lockAnchors: true,
-//            anchors:['Main', 'About', 'Events', 'Speakers', 'Sponsors', 'Location'],
-//            navigation: true,
-//            navigationPosition: 'right',
-//            showActiveTooltip: true,
-//            slidesNavigation: true,
-//            slidesNavPosition: 'bottom',
-//            fadingEffect:true,
-//            faddingEffect:'sections',
-//
-//            continuousHorizontal:true,
-//            scrollDelay: 2000,
-//            css3: true,
-//            scrollingSpeed: 900,
-//            autoScrolling: true,
-//            fitToSection: true,
-//            fitToSectionDelay: 4000,
-//            scrollBar: false,
-//            easing: 'easeInOutCubic',
-//            easingcss3: 'ease',
-//            loopBottom: false,
-//            loopTop: false,
-//            loopHorizontal: true,
-//            continuousVertical: false,
-//            continuousHorizontal: false,
-//            scrollHorizontally: false,
-//            interlockedSlides: false,
-//            resetSliders: false,
-//            normalScrollElements: '#element1, .element2',
-//            scrollOverflow: false,
-//            scrollOverflowOptions: null,
-//            touchSensitivity: 15,
-//            normalScrollElementTouchThreshold: 5,
-//            bigSectionsDestination: null,
-//
-//            keyboardScrolling: true,
-//            animateAnchor: true,
-//            recordHistory: true,
-//
-//            controlArrows: true,
-//            verticalCentered: true,
-//    //        sectionsColor : ['#eae8dd', '#4BBFC3', '#7BAABE', 'whitesmoke', '#f4f2f0'],
-//            paddingTop: '3em',
-//            paddingBottom: '10px',
-//            fixedElements: '#header, .footer',
-//            responsiveWidth: 0,
-//            responsiveHeight: 0,
-//            responsiveSlides: false,
-//
-//            sectionSelector: '.section',
-//            slideSelector: '.slide',
-//
-//            onLeave: function(index, nextIndex, direction){},
-//            afterLoad: function(anchorLink, index){},
-//            afterRender: function(){},
-//            afterResize: function(){},
-//            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-//            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-//        });
-//    };
+    var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+    
+    if (!isMobile.any()) {
+        $('#fullpage').fullpage({
+            menu: '#menu',
+            lockAnchors: true,
+            anchors:['Main', 'About', 'Events', 'Speakers', 'Sponsors', 'Location'],
+            navigation: true,
+            navigationPosition: 'right',
+            showActiveTooltip: true,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+            fadingEffect:true,
+            faddingEffect:'sections',
+
+            continuousHorizontal:true,
+            scrollDelay: 2000,
+            css3: true,
+            scrollingSpeed: 900,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 4000,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            continuousHorizontal: false,
+            scrollHorizontally: false,
+            interlockedSlides: false,
+            resetSliders: false,
+            normalScrollElements: '#element1, .element2',
+            scrollOverflow: false,
+            scrollOverflowOptions: null,
+            touchSensitivity: 15,
+            normalScrollElementTouchThreshold: 5,
+            bigSectionsDestination: null,
+
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+
+            controlArrows: true,
+            verticalCentered: true,
+    //        sectionsColor : ['#eae8dd', '#4BBFC3', '#7BAABE', 'whitesmoke', '#f4f2f0'],
+            paddingTop: '3em',
+            paddingBottom: '10px',
+            fixedElements: '#header, .footer',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            responsiveSlides: false,
+
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+
+            onLeave: function(index, nextIndex, direction){},
+            afterLoad: function(anchorLink, index){},
+            afterRender: function(){},
+            afterResize: function(){},
+            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        });
+    };
     
     $('#menu li').click(function(){
         $.fn.fullpage.moveTo($(this).attr('data-menuanchor'), 1);
