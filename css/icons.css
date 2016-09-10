@@ -3,11 +3,11 @@
 /* untitled-font-1 */
 @font-face {
   font-family: "untitled-font-1";
-  src:url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1465069190.eot");
-  src:url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1465069190.eot?#iefix") format("embedded-opentype"),
-    url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1465069190.woff") format("woff"),
-    url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1465069190.ttf") format("truetype"),
-    url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1465069190.svg#1465069190") format("svg");
+  src:url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1473534557.eot");
+  src:url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1473534557.eot?#iefix") format("embedded-opentype"),
+    url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1473534557.woff") format("woff"),
+    url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1473534557.ttf") format("truetype"),
+    url("https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/fonts/1473534557.svg#1473534557") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -106,4 +106,13 @@
 }
 .icon-keybase:before {
   content: "\77";
+}
+.icon-flickr:before {
+  content: "\78";
+}
+.icon-poddery:before {
+  content: "\79";
+}
+.icon-user:before {
+  content: "\7a";
 }

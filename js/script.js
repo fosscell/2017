@@ -1,30 +1,37 @@
 $(document).ready(function() {
     var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
     
     if (!isMobile.any()) {
+        $('.section-head').each(function() {
+            var text = $(this).text()
+            if(text != "About FOSSMeet") {
+                $(this).remove();
+            }
+        });
+        
         $('#fullpage').fullpage({
             menu: '#menu',
             lockAnchors: true,
-            anchors:['Main', 'About', 'Events', 'Speakers', 'Sponsors', 'Location'],
+            anchors:['Main', 'About', 'Events', 'Speakers', 'Sponsors', 'Contact'],
             navigation: true,
             navigationPosition: 'right',
             showActiveTooltip: true,
