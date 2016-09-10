@@ -1,612 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- commenting is my style of dreaming -->
-<!--               a8888b.              -->
-<!--              d888888b.             -->
-<!--              8P"YP"Y88             -->
-<!--              8|o||o|88             -->
-<!--              8'    .88             -->
-<!--              8`._.' Y8.            -->
-<!--             d/      `8b.           -->
-<!--           .dP   .     Y8b.         -->
-<!--          d8:'   "   `::88b.        -->
-<!--         d8"           `Y88b        -->
-<!--        :8P     '       :888        -->
-<!--         8a.    :      _a88P        -->
-<!--       ._/"Yaa_ :    .| 88P|        -->
-<!--  jgs  \    YP"      `| 8P  `.      -->
-<!--  a:f  /     \._____.d|    .'       -->
-<!--       `::..__)888888P`._.'         -->
-<!-- commenting is my style of dreaming -->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- the above four lines *should* come before all other tags in the same order -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <!-- the Original SEO -->
-    <meta name="description" content="FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut.">
-    <meta name="keywords" content="relevant, keywords, appear, here, nitc, fossmeet, NITC, CSEA, FOSSCell, fossmeet, fossmeet 2017, nit, fossmeet nit, nit calicut">
-    <meta name="author" content="FOSSCell, NITCalicut">
-
-    <title>FOSSMeet '17</title>
-    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
-
-    <meta property="og:title" content="FOSSMeet '17" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:url" content="http://www.fossmeet.in"/>
-    <meta property="og:description" content="FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut." />
-    <meta property="og:locale" content="en_IN" />
-    <meta property="og:image" content="http://fossmeet.in/img/poster.jpg" />
-    <meta property="fb:app_id" content="1063442297042156" />
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@fossmeet">
-    <meta name="twitter:creator" content="@fosscell">
-    <meta name="twitter:title" content="FOSSMeet '17">
-    <meta name="twitter:description" content="FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut.">
-    <meta name="twitter:image" content="http://fossmeet.in/img/poster.jpg">
-    <meta name="twitter:image:alt" content="FOSSMeet '17">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.js"></script>
-    <![endif]-->
-
-    <!--Font CSS-->
-    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans' />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
-    <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/highslide.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-
-<body>
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" id="menu-btn">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <!-- commenting is my style of dreaming -->
+    <!--               a8888b.              -->
+    <!--              d888888b.             -->
+    <!--              8P"YP"Y88             -->
+    <!--              8|o||o|88             -->
+    <!--              8'    .88             -->
+    <!--              8`._.' Y8.            -->
+    <!--             d/      `8b.           -->
+    <!--           .dP   .     Y8b.         -->
+    <!--          d8:'   "   `::88b.        -->
+    <!--         d8"           `Y88b        -->
+    <!--        :8P     '       :888        -->
+    <!--         8a.    :      _a88P        -->
+    <!--       ._/"Yaa_ :    .| 88P|        -->
+    <!--  jgs  \    YP"      `| 8P  `.      -->
+    <!--  a:f  /     \._____.d|    .'       -->
+    <!--       `::..__)888888P`._.'         -->
+    <!-- commenting is my style of dreaming -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- the above four lines *should* come before all other tags in the same order -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- the Original SEO -->
+        <meta name="description" content="FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut.">
+        <meta name="keywords" content="relevant, keywords, appear, here, nitc, fossmeet, NITC, CSEA, FOSSCell, fossmeet, fossmeet 2017, nit, fossmeet nit, nit calicut">
+        <meta name="author" content="FOSSCell, NITCalicut">
+        <title>FOSSMeet '17</title>
+        <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+        <meta property="og:title" content="FOSSMeet '17" />
+        <meta property="og:type" content="Website" />
+        <meta property="og:url" content="http://www.fossmeet.in"/>
+        <meta property="og:description" content="FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut." />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:image" content="http://fossmeet.in/img/poster.jpg" />
+        <meta property="fb:app_id" content="1063442297042156" />
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@fossmeet">
+        <meta name="twitter:creator" content="@fosscell">
+        <meta name="twitter:title" content="FOSSMeet '17">
+        <meta name="twitter:description" content="FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut.">
+        <meta name="twitter:image" content="http://fossmeet.in/img/poster.jpg">
+        <meta name="twitter:image:alt" content="FOSSMeet '17">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.js"></script>
+        <![endif]-->
+        <!--Font CSS-->
+        <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans' />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+<!--        <link rel="stylesheet" type="text/css" href="css/responsive-nav.css" />-->
+        <link rel="stylesheet" type="text/css" href="css/mobileStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="menu-btn" id="menu-btn">
+                <div></div>
+                <span></span> 
+                <span></span> 
+                <span></span> 
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav pull-right" id="menu">
-                  <li data-menuanchor="Main" class="active"><a href="#">Home</a></li>
-                  <li data-menuanchor="About"><a href="#">About FOSSMeet</a></li>
-                  <li data-menuanchor="Events"><a href="#Events">Previous Events</a></li>
-                  <li data-menuanchor="Speakers"><a href="#">Previous Speakers</a></li>
-                  <li data-menuanchor="Sponsors"><a href="#">Previous Sponsors</a></li>
-                  <li data-menuanchor="Location"><a href="#">Reach Us</a></li>
+            <div class="responsive-menu normal">
+                <ul id="menu">
+                    <li data-menuanchor="Main" class="active"><a href="#Main">Home</a></li>
+                    <li data-menuanchor="About"><a href="#About">About FOSSMeet</a></li>
+                    <li data-menuanchor="Events"><a href="#Events">Previous Events</a></li>
+                    <li data-menuanchor="Speakers"><a href="#Speakers">Previous Speakers</a></li>
+                    <li data-menuanchor="Sponsors"><a href="#Sponsers">Previous Sponsors</a></li>
+                    <li data-menuanchor="Location"><a href="#Location">Reach Us</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <div id="fullpage">
-
-        <div class="section active" id="section0">
-            <div class="content">
-                <div class="wrap">
-                <h1 class="main-head">FOSSMEET '17 NIT CALICUT</h1>
-                <p class="info">FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut.</p>
+        <div id="fullpage">
+            <div class="section active" id="section0">
+                <div class="content">
+                    <div class="wrap">
+                        <h1 class="main-head">FOSSMEET '17 NIT CALICUT</h1>
+                        <p class="info">FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut.</p>
                     </div>
-            </div>
-
-            <svg class="arrows">
-                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-            </svg>
-        </div>
-
-        <div class="section" id="section1">
-            <div class="container">
-                <div class="section-head">About FOSSMeet</div>
-                <div class="data animated">
-                  FOSSMeet is an annual event on Free and Open source software,
-                  conducted at National Institute of Technology, Calicut.
-                  Started with a vision to create a culture of innovation,
-                  evolution and open standards, the meet intends to support the
-                  FOSS community and the dissemination of FOSS ideology through
-                  hands-on sessions, discussions and lectures by eminent
-                  personalities. Nothing better to get you introduced to the
-                  world of FOSS.
                 </div>
+                <svg class="arrows">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
             </div>
-            <div class="divider"></div>
-        </div>
-
-        <div class="section" id="section2">
-            <div class="slide" id="slide1" data-anchor="slide1">
-                <div class="wrapper">
-                    <div class="picture effect">
-                        <img src="img/events/00.jpg">
+            <div class="section" id="section1">
+                <div class="container">
+                    <div class="section-head">About FOSSMeet</div>
+                    <div class="data animated">
+                        FOSSMeet is an annual event on Free and Open source software,
+                        conducted at National Institute of Technology, Calicut.
+                        Started with a vision to create a culture of innovation,
+                        evolution and open standards, the meet intends to support the
+                        FOSS community and the dissemination of FOSS ideology through
+                        hands-on sessions, discussions and lectures by eminent
+                        personalities. Nothing better to get you introduced to the
+                        world of FOSS.
                     </div>
-                    <div class="info">Mr SasiKumar talking about the Open Source Movement</div>
                 </div>
-			</div>
-
-            <div class="slide" id="slide2" data-anchor="slide2">
-                <div class="wrapper">
-                    <div class="picture">
-                        <img src="img/events/01.jpg">
-                    </div>
-                    <div class="info">Mr SasiKumar talking about the Open Source Movement</div>
-                </div>
+                <div class="divider"></div>
             </div>
-
-            <div class="slide" id="slide3" data-anchor="slide3">
-                <div class="wrapper">
-                    <div class="picture">
-                        <img src="img/events/02.jpg">
-                    </div>
-                    <div class="info">Mr SasiKumar talking about the Open Source Movement</div>
-                </div>
-            </div>
-
-            <div class="slide" id="slide3" data-anchor="slide3">
-                <div class="wrapper">
-                    <div class="picture">
-                        <img src="img/events/03.jpg">
-                    </div>
-                    <div class="info">Mr SasiKumar talking about the Open Source Movement</div>
-                </div>
-            </div>
-
-            <div class="slide" id="slide3" data-anchor="slide3">
-                <div class="wrapper">
-                    <div class="picture">
-                        <img src="img/events/04.jpg">
-                    </div>
-                    <div class="info">Mr SasiKumar talking about the Open Source Movement</div>
-                </div>
-            </div>
-
-            <div class="slide" id="slide3" data-anchor="slide3">
-                <div class="wrapper">
-                    <div class="picture">
-                        <img src="img/events/05.jpg">
-                    </div>
-                    <div class="info">Mr SasiKumar talking about the Open Source Movement</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="section3">
-        <div class="container">
-<!--                  <div class="section-head">Previous Speakers</div>-->
-                  <div class="grid">
-                      <div class="photo">
-                          <div class="hovereffect col-1-4">
-                              <img src="img/speakers/sks.jpg" alt="">
-                              <div class="overlay">
-                                  <h2>Sasi Kumar</h2>
-                                  <p class="icon-links">
-                                      <a href="#">
-                                          <span class="fa fa-twitter"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-facebook"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-instagram"></span>
-                                      </a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <div class="photo">
-                          <div class="hovereffect col-1-4">
-                              <img src="img/speakers/praveen.jpg" alt="">
-                              <div class="overlay">
-                                  <h2>Pirate Praveen</h2>
-                                  <p class="icon-links">
-                                      <a href="#">
-                                          <span class="fa fa-twitter"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-facebook"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-instagram"></span>
-                                      </a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="photo">
-                          <div class="hovereffect col-1-4">
-                              <img src="img/speakers/steven.jpg" alt="">
-                              <div class="overlay">
-                                  <h2>Steven Deobald</h2>
-                                  <p class="icon-links">
-                                      <a href="#">
-                                          <span class="fa fa-twitter"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-facebook"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-instagram"></span>
-                                      </a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="photo">
-                          <div class="hovereffect col-1-4">
-                              <img src="img/speakers/baiju.jpg" alt="">
-                              <div class="overlay">
-                                  <h2>Baiju M</h2>
-                                  <p class="icon-links">
-                                      <a href="#">
-                                          <span class="fa fa-twitter"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-facebook"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-instagram"></span>
-                                      </a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="photo">
-                          <div class="hovereffect col-1-4">
-                              <img src="img/speakers/pramode.jpg" alt="">
-                              <div class="overlay">
-                                  <h2>Pramode CE</h2>
-                                  <p class="icon-links">
-                                      <a href="#">
-                                          <span class="fa fa-twitter"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-facebook"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-instagram"></span>
-                                      </a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="photo">
-                          <div class="hovereffect col-1-4">
-                              <img src="img/speakers/praveen.jpg" alt="">
-                              <div class="overlay">
-                                  <h2>Speaker Name</h2>
-                                  <p class="icon-links">
-                                      <a href="#">
-                                          <span class="fa fa-twitter"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-facebook"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-instagram"></span>
-                                      </a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="photo">
-                          <div class="hovereffect col-1-4">
-                              <img src="img/speakers/noufal.jpg" alt="">
-                              <div class="overlay">
-                                  <h2>Noufal Ibrahim</h2>
-                                  <p class="icon-links">
-                                      <a href="#">
-                                          <span class="fa fa-twitter"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-facebook"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-instagram"></span>
-                                      </a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="photo">
-                          <div class="hovereffect col-1-4">
-                              <img src="img/speakers/praveen.jpg" alt="">
-                              <div class="overlay">
-                                  <h2>Speaker Name</h2>
-                                  <p class="icon-links">
-                                      <a href="#">
-                                          <span class="fa fa-twitter"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-facebook"></span>
-                                      </a>
-                                      <a href="#">
-                                          <span class="fa fa-instagram"></span>
-                                      </a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-        </div>
-
-        <div class="section" id="section4">
-          <div class="container">
-                <div class="section-head">Previous Sponsors</div>
-                <div class="grid">
-                  <div class="photo">
-                      <div class="hovereffect col-1-4">
-                          <img class="img-resposive" src="img/sponsors/icfoss.png" alt="">
-                          <div class="overlay">
-                              <h2 data-toggle="tooltip" title="International Centre for Free and Open Source Software">ICFOSS</h2>
-                              <p class="icon-links">
-                                <a href="https://twitter.com/fosskerala">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a href="https://www.linkedin.com/company/icfoss">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a href="https://www.facebook.com/ICFOSS">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="photo">
-                      <div class="hovereffect col-1-4">
-                          <img class="img-resposive" src="img/sponsors/concur.png" alt="">
-                          <div class="overlay">
-                              <h2>Concur</h2>
-                              <p class="icon-links">
-                                <a href="https://twitter.com/concur">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a href="https://www.linkedin.com/company/concur-technologies">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a href="https://www.facebook.com/Concur">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="photo">
-                      <div class="hovereffect col-1-4">
-                          <img class="img-resposive" src="img/sponsors/itatkerala.jpg" alt="">
-                          <div class="overlay">
-                              <h2>IT @ Kerala</h2>
-                              <p class="icon-links">
-                                <a href="#">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="photo">
-                      <div class="hovereffect col-1-4">
-                          <img class="img-resposive" src="img/sponsors/keralaitmission.png" alt="">
-                          <div class="overlay">
-                              <h2>Kerala State IT Mission</h2>
-                              <p class="icon-links">
-                                <a href="https://twitter.com/ITMissionKerala">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a href="https://www.facebook.com/Kerala-State-It-Mission-239071722898857">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="photo">
-                      <div class="hovereffect col-1-4">
-                          <img class="img-resposive" src="img/sponsors/nrcfoss.jpg" alt="">
-                          <div class="overlay">
-                              <h2>NRC FOSS</h2>
-                              <p class="icon-links">
-                                <a href="#">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="photo">
-                      <div class="hovereffect col-1-4">
-                          <img class="img-resposive" src="img/sponsors/linuxjournal.png" alt="">
-                          <div class="overlay">
-                              <h2>Linux Journal</h2>
-                              <p class="icon-links">
-                                <a href="#">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="photo">
-                      <div class="hovereffect col-1-4">
-                          <img class="img-resposive" src="img/sponsors/thinkdigit.png" alt="">
-                          <div class="overlay">
-                              <h2>Digit</h2>
-                              <p class="icon-links">
-                                <a href="https://twitter.com/digitindia">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a href="https://www.facebook.com/thinkdigit">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="photo">
-                      <div class="hovereffect col-1-4">
-                          <img class="img-resposive" src="img/sponsors/vestigeitlabs.png" alt="">
-                          <div class="overlay">
-                              <h2>Vestige IT Labs</h2>
-                              <p class="icon-links">
-                                <a href="#">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-          </div>
-          <div class="divider"></div>
-        </div>
-
-        <div class="section" id="section5">
-            <div class="container">
-                <div id="map">
-                </div>
-                <div class="fp-auto-height">
+            <div class="section" id="section2">
+                <div class="slide" id="slide1" data-anchor="slide1">
                     <div class="wrapper">
-                        <div class="credits">
-                          <a href="https://github.com/fosscell/fossmeet17">
-                            <i class="fa fa-copyright fa-flip-horizontal"></i>
-                            Creative and Intellectual minds of NIT Calicut
-                          </a>
-                          <a href="mailto:fossmeet@poddery.com" class="fa fa-diasp">
-                            <span class="fa-stack fa-lg">
-                              <span class="fa fa-star-o fa-stack-2x"></span>
-                              <span class="fa fa-fw fa-stack-1x"><strong>D</strong></span>
-                            </span>
-                            <span class="label">Diaspora</span>
-                          </a>
-                          <a href="https://fb.me/FOSSMeet" class="fa fa-facebook fa-2x"><span class="label">Facebook</span></a>
-                          <a href="http://www.flickr.com/search/?q=fossmeet" class="fa fa-flickr fa-2x"><span class="label">Flickr</span></a>
-                          <!--<a href="https://github.com/fosscell" class="fa fa-github fa-2x"><span class="label">GitHub</span></a>
-                          <a href="https://gitlab.com/groups/fosscell" class="fa fa-gitlab fa-2x"><span class="label">GitLab</span></a>-->
-                          <a href="https://plus.google.com/109660182976357345132" class="fa fa-google-plus fa-2x"><span class="label">Google+</span></a>
-                          <a href="https://twitter.com/fossmeet" class="fa fa-twitter fa-2x"><span class="label">Twitter</span></a>
-                          <a href="https://www.youtube.com/channel/UCwfNynjOSd3oPwIFqduJ9-Q" class="fa fa-youtube fa-2x"><span class="label">YouTube</span></a>
+                        <div class="picture">
+                            <img src="img/events/00.jpg">
                         </div>
+                        <div class="info">Here comes the description of the picture</div>
+                    </div>
+                </div>
+                <div class="slide" id="slide2" data-anchor="slide2">
+                    <div class="wrapper">
+                        <div class="picture">
+                            <img src="img/events/01.jpg">
+                        </div>
+                        <div class="info">Here comes the description of the picture</div>
+                    </div>
+                </div>
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <div class="wrapper">
+                        <div class="picture">
+                            <img src="img/events/02.jpg">
+                        </div>
+                        <div class="info">Here comes the description of the picture</div>
+                    </div>
+                </div>
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <div class="wrapper">
+                        <div class="picture">
+                            <img src="img/events/03.jpg">
+                        </div>
+                        <div class="info">Here comes the description of the picture</div>
+                    </div>
+                </div>
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <div class="wrapper">
+                        <div class="picture">
+                            <img src="img/events/04.jpg">
+                        </div>
+                        <div class="info">Here comes the description of the picture</div>
+                    </div>
+                </div>
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <div class="wrapper">
+                        <div class="picture">
+                            <img src="img/events/05.jpg">
+                        </div>
+                        <div class="info">Here comes the description of the picture</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section3">
+                <div class="container">
+                    <!--                  <div class="section-head">Previous Speakers</div>-->
+                    <div class="grid">
+                        <div class="photo">
+                            <div class="hovereffect col-1-4">
+                                <img src="img/speakers/sks.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Sasi Kumar</h2>
+                                    <p class="icon-links">
+                                        <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-github"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <div class="hovereffect col-1-4">
+                                <img src="img/speakers/praveen.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Pirate Praveen</h2>
+                                    <p class="icon-links">
+                                        <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-github"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <div class="hovereffect col-1-4">
+                                <img src="img/speakers/steven.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Steven Deobald</h2>
+                                    <p class="icon-links">
+                                        <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-github"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <div class="hovereffect col-1-4">
+                                <img src="img/speakers/baiju.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Baiju M</h2>
+                                    <p class="icon-links">
+                                        <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-github"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <div class="hovereffect col-1-4">
+                                <img src="img/speakers/pramode.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Pramode CE</h2>
+                                    <p class="icon-links">
+                                        <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-github"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <div class="hovereffect col-1-4">
+                                <img src="img/speakers/praveen.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Speaker Name</h2>
+                                    <p class="icon-links">
+                                        <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-github"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <div class="hovereffect col-1-4">
+                                <img src="img/speakers/noufal.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Noufal Ibrahim</h2>
+                                    <p class="icon-links">
+                                        <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-github"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <div class="hovereffect col-1-4">
+                                <img src="img/speakers/praveen.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Speaker Name</h2>
+                                    <p class="icon-links">
+                                        <a href="#">
+                                        <span class="fa fa-twitter"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-facebook"></span>
+                                        </a>
+                                        <a href="#">
+                                        <span class="fa fa-github"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section4">
+                <div class="container">
+                    <div class="sponsor-pic"></div>
+                </div>
+                <div class="divider"></div>
+            </div>
+            
+<!--
+            <div class="section" id="section5">
+                <div class="container">
+                    <div id="map">
+                    </div>
+                    <div class="wrapper">
+                        <div class="credits">Creative and Intellectual minds of NIT Calicut</div>
+                        <a href="mailto:fossmeet@poddery.com" class="fa fa-diasp"></a>
+                        <div class="contact"><a href="#contactForm">contact the organizer</a></div>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="contact">
-                          <a href="#" data-toggle="modal" data-target="#contactFormModal">
-                            contact the organiser(s)
-                          </a>
-                        </div>
-                      </div>
+        </div>
+
+        <div id="contactForm" class="contactModal">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Contact the Event Organizers</h2>
+                <form id="contactform" method="POST" onsubmit="SendEmail();return false;">
+                    <input type="hidden" name="toemail" value="info@fossmeet.in">
+                    <input type="hidden" name="subject" value="message from FOSSMeet 17 website">
+                    <input id="fromname" name="fromname" type="text" placeholder="your name" required>
+                    <input id="fromemail" name="fromemail" type="email" placeholder="your email" required>
+                    <textarea id="message" name="message" rows="11" placeholder="Type your message here" required></textarea>
+                </form>
+                <button class="button icon-plane" name="Send" form="contactform" type="submit" id="post"></button>
+                <div class="modal-footer">
+                    <p>You can also reach us at: <span id="obfuscaytedEMailID"></span></p>
+                </div>
+            </div>  
+-->
+        </div>
+            
+        <!-- pdf viewer 
+        <div id="pdfViewModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Marketing Brochure</h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="http://docs.google.com/viewer?embedded=true&hl=en&url=//path/to/marketing/brochure.pdf" width='100%' height='100%'>
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
-
-    </div>
-
-    <!-- contact form -->
-    <div id="contactFormModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Contact the Event Organizers</h4>
-          </div>
-          <div class="modal-body">
-            <form id="contactform" method="POST" onsubmit="SendEmail();return false;">
-                <input type="hidden" name="toemail" value="info@fossmeet.in">
-                <input type="hidden" name="subject" value="message from FOSSMeet 17 website">
-                <input id="fromname" name="fromname" type="text" placeholder="your name" required>
-                <input id="fromemail" name="fromemail" type="email" placeholder="your email" required>
-                <textarea id="message" name="message" rows="11" placeholder="Type your message here" required></textarea>
-                <button class="button icon-plane" name="Send" form="contactform" type="submit" id="post"></button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <p>You can also reach us at: <span id="obfuscaytedEMailID"></span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- pdf viewer -->
-    <div id="pdfViewModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Marketing Brochure</h4>
-          </div>
-          <div class="modal-body">
-            <iframe src="http://docs.google.com/viewer?embedded=true&hl=en&url=//path/to/marketing/brochure.pdf" width='100%' height='100%'>
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/lightslider.js"></script>
-    <script type="text/javascript" src="js/leaflet.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="js/scrolloverflow.js"></script>
-    <script type="text/javascript" src="js/highslide-with-gallery.js"></script>
-    <script type="text/javascript" src="js/mapConfig.js"></script>
-    <script type="text/javascript" src="js/validate.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/animations.js"></script>
-
-</body>
+-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="js/leaflet.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="js/scrolloverflow.js"></script>
+        <script type="text/javascript" src="js/responsive-nav.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/animations.js"></script>
+    </body>
 </html>
