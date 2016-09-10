@@ -10,6 +10,14 @@
     img, video, audio, iframe, object {
         max-width: 100%;
     }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+    }
 
     body{
         margin: 0;
@@ -230,5 +238,157 @@
         background-color: black;
         width: 50%;
         margin: 14% auto;
+    }
+    
+    textarea#message {
+        margin-top: 2em;
+        width: 100%;
+        max-height: 30%;
+        line-height: 21px;
+        color: #666;
+        overflow-y: hidden;
+        resize: none;
+        font-weight: 500;
+        border: 1px solid blue;
+        text-indent: 10px;
+    }
+    #fromemail,
+    #fromname {
+        height: 15%;
+        width: 100%;
+        margin-top: 10%;
+        min-height: 100%;
+        color: #666;
+        overflow-y: hidden;
+        -webkit-appearance: none;
+        font-weight: 500;
+        border: 1px solid blue;
+        text-indent: 10px;
+    }
+    textarea:focus::-webkit-input-placeholder {
+        color: transparent;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+    }
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+    }
+    .button {
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid #d0d0d0;
+        font-size: 1.1em;
+        margin-top: 8%;
+        padding: 5px 25px 5px 20px;
+    }
+    .button:hover {
+        cursor: pointer;
+    }
+    #post {
+        margin-left: 0;
+        font-size: 1.9em;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+    }
+    #post:hover {
+        color: #ff1a29;
+    }
+
+    .inner {
+        margin-top: 15%;
+        line-height: 1.9;
+    }
+    .inner p {
+        padding-left: 34px;
+        margin-bottom: 1.5em;
+        font-size: 1em;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+    }
+
+    .inner p:hover {
+        color: #ff1a29;
+    }
+
+    .icon {
+        margin-left: -20px;
+    }
+
+    #wrapper {
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    #col2 {
+        width: 100%;
+        margin: auto;
+    }
+    
+    table {
+        vertical-align: middle;
+        white-space: normal;
+        line-height: normal;
+        font-weight: 400;
+        font-size: medium;
+        font-variant: normal;
+        font-style: normal;
+        border-collapse: collapse;
+        margin-top: -30px;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+
+    .contact {
+        width: 100%;
+        margin-top: -40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+        display: block;
+        margin-left: 70%;
+        margin-top: -70px;
+    }
+    .links {
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        padding-left: -2px;
+    }
+
+    .links li {
+        font-size: 2em;
+        display: inline-block;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 5%;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .links li:hover {
+        color: #ff1a29;
+    }
+    
+    .repre-contact {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact1 {
+        margin-top: 6%;
+        width: 100%;
     }
 }

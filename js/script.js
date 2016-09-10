@@ -89,7 +89,12 @@ $(document).ready(function() {
             afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
         });
-    };
+    }
+    
+    else {
+        $('#contacttitle').addClass('section-head');
+        $('#col2 .inner h3').remove();
+    }
     
     $('#menu li').click(function(){
         $.fn.fullpage.moveTo($(this).attr('data-menuanchor'), 1);
