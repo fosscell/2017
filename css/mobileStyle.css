@@ -29,6 +29,7 @@
         margin-bottom: -3%;
         display: block;
         z-index: 10000;
+        position: fixed;
     }
     
     .section{
@@ -144,6 +145,8 @@
     }
     
     .wrapper .picture img {
+        box-shadow: 8px 8px 10px #aaa;
+        box-shadow: inset 0px 0px 40px 40px #DBA632;
         max-height: 100%;
         max-width: 100%;
     }
@@ -224,6 +227,6 @@
         height: 2px;
         background-color: black;
         width: 50%;
-        margin: auto;
+        margin: 14% auto;
     }
 }
