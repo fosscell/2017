@@ -14,7 +14,7 @@
     }
     
     a:hover{
-        color: #6fdc6f;
+        color: #9CCB19;
     }
     body {
         font-size: 60%;
@@ -40,8 +40,6 @@
     }
     #menu li.active a:hover {
         color: #949185;
-    }
-    #menu li a:hover {
     }
     
     #menu li a,
@@ -72,7 +70,7 @@
         display: block;
         z-index: 10;
         font-size: 40px;
-        width: 40%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -249,7 +247,10 @@
         margin: 10px;
         display: inline;
         float: left;
-        border: solid 1px #EFEFEF;
+        border: solid 1px #CCC;
+        -moz-box-shadow: 1px 1px 5px #999;
+        -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
     }
     .photo:after {
         content: "";
@@ -279,9 +280,9 @@
         top: auto;
         bottom: 0;
         padding: 0.2em;
-        padding-top: 0.4em;
-        height: 7.25em;
-        background: #6fdc6f;
+        padding-top: 0.5em;
+/*        height: 7.15em;*/
+        background: #9CCB19;
         color: #3c4a50;
         -webkit-transition: -webkit-transform 0.35s;
         transition: transform 0.35s;
@@ -443,7 +444,7 @@
         transition-timing-function: linear;
     }
     #post:hover {
-        color: #ff1a29;
+        color: #9CCB19;
     }
     
     .inner {
@@ -470,7 +471,7 @@
     }
 
     .inner p:hover {
-        color: #ff1a29;
+        color: #9CCB19;
     }
 
     .icon {
@@ -516,7 +517,6 @@
         text-transform: uppercase;
         text-align: center;
         font-size: 3em;
-        font-family: Raleway;
         font-weight: bold;
     }
 
@@ -551,7 +551,7 @@
     }
 
     .links li:hover {
-        color: #ff1a29;
+        color: #9CCB19;
     }
     
     .navbar {
@@ -580,6 +580,11 @@
         height: 100vh;
     }
     .main-head {
+        color: #9CCB19;
+        letter-spacing: 3px;
+        font-family: 'Montserrat';
+        font-size: 1em;
+/*        color: green;*/
         -webkit-animation: fadein 2s;
         -moz-animation: fadein 2s;
         -ms-animation: fadein 2s;
@@ -639,5 +644,23 @@
 .clearfix {
     clear: both;
 }
-    
+
+hovereffect img {
+    height: 253px;
+    width: 253px;
+}
+
+.logo {
+    margin: auto;
+    margin-top: 2%;
+}
+
+svg {
+    fill: #9CCB19;
+}
+
+.info {
+    font-family: 'Montserrat';
+    color: #9CCB19;
+    width: 100%;
 }
