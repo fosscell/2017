@@ -53,14 +53,7 @@
         margin-bottom: 9%;
     }
     
-        #section0 {
-        height: 100vh;
-        background-color: #464646;
-        background-image: url("../img/background.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-/*        background-attachment: fixed;*/
-    }
+
 
     .menu-btn {
         max-width: 100%;
@@ -120,7 +113,9 @@
     }
 
     .content {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         color: white;
         font-size: 1em;
         max-width: 100%;
@@ -378,4 +373,18 @@
         margin-top: 6%;
         max-width: 100%;
     }
+}
+
+.bg {
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+    background-color: #464646;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*        background-attachment: fixed;*/
+    position: absolute;
+    top: 0;
+    left: 0;
 }

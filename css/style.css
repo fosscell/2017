@@ -231,37 +231,27 @@
         font-size: 1.4em;
         text-align: center;
     }
-    [class*='col-'] {
-        float: left;
-        width: 20%;
-    }
     .grid {
-        width: 90%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3%;
+        margin-top: 5%;
     }
     .photo {
-        width: 23%;
+        background-color: #fdfdfd;
+        border: 1px solid #c0c0c0;
+        border-radius: 5px;
+        width: 19%;
+        height: 19%; 
         padding: 0.6%;
-        margin: 10px;
-        display: inline;
+        margin: 5px;
         float: left;
-        border: solid 1px #CCC;
-        -moz-box-shadow: 1px 1px 5px #999;
-        -webkit-box-shadow: 1px 1px 5px #999;
-        box-shadow: 1px 1px 5px #999;
+        display: inline;
     }
     .photo:after {
         content: "";
         display: table;
         clear: both;
-    }
-    .photo:hover {
-        border: solid 1px #CCC;
-        -moz-box-shadow: 1px 1px 5px #999;
-        -webkit-box-shadow: 1px 1px 5px #999;
-        box-shadow: 1px 1px 5px #999;
     }
     .hovereffect {
         width: 100%;
@@ -272,89 +262,27 @@
         text-align: center;
         cursor: default;
     }
-    .hovereffect .overlay {
-        width: 100%;
-        position: absolute;
-        overflow: hidden;
-        left: 0;
-        top: auto;
-        bottom: 0;
-        padding: 0.2em;
-        padding-top: 0.5em;
-/*        height: 7.15em;*/
-        background: #9CCB19;
-        color: #3c4a50;
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
     .hovereffect img {
+        padding: 2px;
+        border: 2px solid #c0c0c0;
         height: 100%;
         width: 100%;
         -webkit-transition: -webkit-transform 0.35s;
         transition: transform 0.35s;
     }
-    .hovereffect:hover img {
-        -webkit-transform: translate3d(0, -10%, 0);
-        transform: translate3d(0, -10%, 0);
-    }
     .hovereffect h2 {
-        padding-left: 0.2em;
+        margin-top:5px;
         font-size: 2em;
         color: #000;
         position: relative;
-        float: left;
-        max-width: 60%;
     }
-    
     .hovereffect p.icon-links a {
         font-size: 1.7em;
         padding: 0;
-        margin: 0;
-        
-        float: right;
+        margin-top: -3px;
+        margin-left: 10px;
+        margin-right: 10px;
         color: #3c4a50;
-    }
-    .hovereffect:hover p.icon-links a:hover,
-    .hovereffect:hover p.icon-links a:focus {
-        color: #252d31;
-    }
-    .hovereffect h2,
-    .hovereffect p.icon-links a {
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(0, 200%, 0);
-        transform: translate3d(0, 200%, 0);
-    }
-    .hovereffect p.icon-links a span:before {
-        display: inline-block;
-        padding: 8px 10px;
-        speak: none;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    .hovereffect:hover .overlay,
-    .hovereffect:hover h2,
-    .hovereffect:hover p.icon-links a {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    .hovereffect:hover h2 {
-        -webkit-transition-delay: 0.05s;
-        transition-delay: 0.05s;
-    }
-    .hovereffect:hover p.icon-links a:nth-child(3) {
-        -webkit-transition-delay: 0.1s;
-        transition-delay: 0.1s;
-    }
-    .hovereffect:hover p.icon-links a:nth-child(2) {
-        -webkit-transition-delay: 0.15s;
-        transition-delay: 0.15s;
-    }
-    .hovereffect:hover p.icon-links a:first-child {
-        -webkit-transition-delay: 0.2s;
-        transition-delay: 0.2s;
     }
     .header {
         text-align: left;
@@ -572,13 +500,7 @@
     .fa > .label {
         display: none;
     }
-    #section0 {
-        background-color: gray;
-        background-image: url("../img/background.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-    }
+
     .main-head {
         color: #9CCB19;
         letter-spacing: 3px;
@@ -663,4 +585,30 @@ svg {
     font-family: 'Montserrat';
     color: #9CCB19;
     width: 100%;
+}
+
+.bg {
+    z-index: -2;
+    height: 100vh;
+    background-color: #464646;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*        background-attachment: fixed;*/
+}
+
+#section0 {
+    position: relative;
+}
+
+#section0 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-position: fixed;
+    background-size: cover;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.6);
 }
