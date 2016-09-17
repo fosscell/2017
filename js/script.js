@@ -19,7 +19,7 @@ $(document).ready(function() {
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-    
+
     if (!isMobile.any()) {
         $('.section-head').each(function() {
             var text = $(this).text()
@@ -27,7 +27,7 @@ $(document).ready(function() {
                 $(this).remove();
             }
         });
-        
+
         $('#fullpage').fullpage({
             menu: '#menu',
             lockAnchors: true,
@@ -90,22 +90,22 @@ $(document).ready(function() {
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
         });
     }
-    
+
     else {
         $('#contacttitle').addClass('section-head');
         $('#col2 .inner h3').remove();
     }
-    
+
     $('#menu li').click(function(){
         $.fn.fullpage.moveTo($(this).attr('data-menuanchor'), 1);
      });
-    
+
     $( '#menu-btn' ).click(function(){
         $('.responsive-menu').toggleClass('expand');
     });
 });
 
-       
+
 var RequestData = function(type, URL, formData, callBack){
   // create a XHR object
   var xhr = new XMLHttpRequest();
@@ -143,10 +143,25 @@ var SendEmail = function(){
   var formData = new FormData(formElement);
   RequestData("POST", SENDMAIL_URL, formData, function(u, r){
     if(r.indexOf("success") != -1){
+      // => remove the alert and, do something else !!!
       alert("we are processing your update, and will get back to you as soon as possible");
     }
     else{
       alert("error(s) occured\n-----\n" + r + "\n-----\n");
     }
   });
+};
+
+var DisplayMessageInModal = function(heading, message){
+  $('.modal-body').html(message);
+  $('.modal-title').html(heading);
+  $($("#ViewBrochureModal").modal());
+};
+
+var DisplaySpecialLink = function(url, desc){
+  DisplayMessageInModal(desc, "<iframe src='" + url + "' width='100%' height='100%' />");
+};
+
+var PreviewURL = function(url){
+  DisplaySpecialLink("https://docs.google.com/viewer?embedded=true&hl=en&url=" + url, "View Brochure");
 };

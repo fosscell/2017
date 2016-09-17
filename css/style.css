@@ -4,7 +4,7 @@
     ::before {
         box-sizing: inherit;
     }
-    
+
     a {
         text-decoration: none;
         color: #fff;
@@ -12,7 +12,7 @@
         transition-duration: 0.5s;
         transition-timing-function: linear;
     }
-    
+
     a:hover{
         /* color: #9CCB19; */
     }
@@ -44,7 +44,7 @@
     #menu li.active a:hover {
         color: #000;
     }
-    
+
     #menu li a,
     #menu li.active a {
         padding: 9px 18px;
@@ -251,7 +251,7 @@
 */
         border-radius: 5px;
         width: 19%;
-        height: 19%; 
+        height: 19%;
         padding: 0.6%;
         margin: 5px;
         float: left;
@@ -299,7 +299,7 @@
         -moz-transform: scale(1.1);
         -o-transform: scale(1.1);
     }
-    
+
     span {
         -webkit-transform: scale(0.8);
         -moz-transform: scale(0.8);
@@ -399,7 +399,7 @@
     #post:hover {
         /* color: #9CCB19; */
     }
-    
+
     .inner {
         padding: 0 0 0 80px;
     }
@@ -449,7 +449,7 @@
         width: 50%;
         float: left;
     }
-    
+
     table {
         vertical-align: middle;
         white-space: normal;
@@ -465,7 +465,7 @@
     li:hover {
         cursor: pointer;
     }
-    
+
     #contacttitle {
         text-transform: uppercase;
         text-align: center;
@@ -506,7 +506,7 @@
     .links li:hover {
         /* color: #9CCB19; */
     }
-    
+
     .navbar {
         margin-bottom: -9px;
         width: 100%;
@@ -563,7 +563,7 @@
         background: linear-gradient(to left, #1D976C , #93F9B9);
 /*        box-shadow: 8px 8px 10px #aaa;*/
         padding: 5px;
-        
+
     }
     .info {
         padding-top: 4%;
@@ -606,7 +606,7 @@ hovereffect img {
     -ms-transition: all 2s ease;
     transition: all 2s ease;
 }
-    
+
 hovereffect img:hover {
     height: 270px;
     width: 270px;
@@ -669,7 +669,7 @@ svg {
     font-size: 0.6em;
     background-color: #4DB6AC;
         cursor: pointer;
-    
+
     margin-top: 15%;
     font-weight: 600;
     -moz-transition: all .51s;
@@ -677,9 +677,9 @@ svg {
     -webkit-transition: all .51s;
     transition: all .51s;
 }
-    
+
     .download:hover {
-          border-radius: 20px;  
+          border-radius: 20px;
     }
 
 .info {

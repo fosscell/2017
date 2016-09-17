@@ -33,7 +33,7 @@
         <link rel="shortcut icon" type="image/png" href="img/logo.png" />
         <meta property="og:title" content="FOSSMeet '17" />
         <meta property="og:type" content="Website" />
-        <meta property="og:url" content="http://www.fossmeet.in"/>
+        <meta property="og:url" content="http://fossmeet.in"/>
         <meta property="og:description" content="FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut." />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:image" content="http://fossmeet.in/img/poster.jpg" />
@@ -55,9 +55,10 @@
         <!--Font CSS-->
         <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Ubuntu|Roboto|Lato|Open+Sans|Raleway|Montserrat|Lora' />
         <!--Custom CSS-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/icons.css" />
+        <link rel="stylesheet" type="text/css" href="css/modal.css" />
         <link rel="stylesheet" type="text/css" href="css/mobileStyle.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
@@ -65,9 +66,9 @@
         <div class="header">
             <div class="menu-btn" id="menu-btn">
                 <div></div>
-                <span></span> 
-                <span></span> 
-                <span></span> 
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <div class="responsive-menu normal">
                 <ul id="menu">
@@ -148,11 +149,11 @@
                             136 169 167 214 32 44 77 108 101 141 24 33 86 123 137 200 51 77 135 201 185
                             276 88 131 91 137 78 163 -16 31 -17 31 -71 4z"/>
                             </g>
-                            </svg>                        
+                            </svg>
                         </div>
                         <h1 class="main-head">FOSSMeet '17</h1>
                         <p class="info">FOSSMeet is the annual event on Free and Open source software, conducted at National Institute of Technology, Calicut.</p>
-                        <a href="#"><div class="download">Download Brochure</div></a>
+                        <div class="download" onclick="PreviewURL('http://complete/path/to/brochure.pdf')">Download Brochure</div>
                     </div>
                 </div>
                 <svg class="arrows">
@@ -324,7 +325,7 @@
                 </div>
                 <div class="divider"></div>
             </div>
-            
+
             <div class="section" id="section5">
             <div class="contact">
                 <h3 id="contacttitle">Get In Touch</h3>
@@ -350,8 +351,8 @@
                                         <p>
                                             <a href="mailto:info@fossmeet.in">
                                             <span class="icon-envelope icon"></span>
-                                            info@fossmeet.in      
-                                            </a>                          
+                                            info@fossmeet.in
+                                            </a>
                                         </p>
                                         <div class="repre-contact">
                                             <div class="contact1">
@@ -378,9 +379,9 @@
                                             <li><a href="https://gitlab.com/groups/fosscell"><span class="icon-gitlab"></span></a></li>-->
                                             <li><a href="https://twitter.com/fossmeet"><span class="icon-twitter"></span></a></li>
                                             <li><a href="https://www.youtube.com/channel/UCwfNynjOSd3oPwIFqduJ9-Q"><span class="icon-youtube"></span></a></li>
-                                            
-                                            
-                                            
+
+
+
                                         </ul>
                                     </div>
                                 </div>
@@ -392,8 +393,26 @@
         </div>
         </div>
 
+        <div class="modal fade" id="ViewBrochureModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><!-- intentionally left blank --></h4>
+              </div>
+              <div class="modal-body">
+                <!-- intentionally left blank -->
+              </div>
+              <!--<div class="modal-footer">
+                &nbsp;<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>-->
+            </div>
+          </div>
+        </div>
+
         <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.waypoints.js"></script>
         <script type="text/javascript" src="js/jquery.easings.min.js"></script>
         <script type="text/javascript" src="js/jquery.fullPage.js"></script>
         <script type="text/javascript" src="js/scrolloverflow.js"></script>
