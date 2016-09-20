@@ -47,12 +47,15 @@ table {
     border-spacing: 0;
 }
 
-*, ::after, ::before {
-    box-sizing: inherit;
+*, *:before, *:after {
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Lato;
+    font-family: 'Myriad';
+    
+    height: 100%;
 }
 
 a {
@@ -62,7 +65,7 @@ a {
 
 .logo {
     position: fixed;
-    top: 0.3%;
+    top: 0.7%;
     cursor: pointer;
     left: 2%;
     width: 2%;
@@ -76,11 +79,11 @@ a {
 
 .header {
     font-family: Lato;
-    font-weight: 300;
+    
     color: white;
-    padding: 0.5%;
+    padding: 0.7%;
     position: fixed;
-    top: 0%;
+/*    top: 0%;*/
     width: 100%;
     height: auto;
     background-color: #111;
@@ -92,7 +95,7 @@ a {
 
 .header span:hover {
     cursor: pointer;
-    font-weight: 400;
+    
 }
 
 .header .menu {
@@ -106,9 +109,264 @@ a {
     display: inline-block;
 }
 
+.empty {
+    height: 32px;
+}
+
+.clearfix {
+    clear: both;
+}
+
 .front {
+    z-index: 2;
+    overflow: hidden;
     width: 100%;
-    height: 80%;
+    height: 100vh;
     background-color: rgb(34, 51, 17);
+    background-size: cover;
+}
+
+.front .img {
+    float: left;
+    margin-left: 10%;
+    margin-top: 4%;
+/*    margin-bottom: 10%;*/
+}
+
+.front .img svg {
+    fill: white;
+}
+
+.front .wrapper {
+    text-align: right;
+    padding: 7%;
+    width: 50%;
+    float: right;
+    height: auto;
+    color: white;
+}
+
+.front .wrapper .head1 {
+    margin-bottom: 3%;
+    font-size: 4em;
+/*    */
+}
+
+.front .wrapper .head2 {
+    margin-bottom: 3%;
+    font-size: 2.3em;
+/*    */
+}
+
+.front .wrapper .head3 {
+    margin-bottom: 3%;
+    font-size: 1.8em;
+/*    */
+}
+
+.front .wrapper .brochure {
+    cursor: pointer;
+    float: right;
+    margin-top: 10%;
+    display: table;
+    width: auto;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 0 0 #fff;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+
+.front .wrapper .brochure:hover {
+    color: #111;
+    box-shadow: inset 0 100px 0 0 #fff;
+}
+
+.about {
+    padding: 2%;
+    padding-left: 0;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about .image {
+    width: 45%;
+    height: auto;
+    float: left;
     background-size: contain;
+}
+
+.about .image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about .content {
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.1;
+    width: 55%;
+    float: left;
+    margin-top: 5%;
+}
+
+.gallery {
+    padding: 4%;
+    height: auto;
+    width: 100%;
+}
+
+.gallery .heading {
+    text-align: center;
+    font-size: 3em;
+    width: 30%;
+    margin:auto;
+    margin-bottom: 4%;
+}
+
+.pre_speakers {
+    padding: 4%;
+    height: auto;
+    width: 100%;
+}
+
+.pre_speakers .heading {
+    text-align: center;
+    font-size: 3em;
+    width: 30%;
+    margin:auto;
+    margin-bottom: 4%;
+}
+
+.pre_speakers .grid {
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pre_speakers .grid .photo {
+    float: left;
+}
+
+.pre_speakers .grid .photo {
+    padding-bottom: 2%;
+    width: 16%;
+    float: left;
+}
+
+.pre_speakers .grid .photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 111px;
+    height: 111px;
+}
+
+.photo_content {
+    margin-top: 4%;
+    font-size: 1.4em;
+    display: block;
+    text-align: center;
+}
+
+.filler {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
+
+.img1 {
+    background-image: url(../img/events/Mozilla_band.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.why {
+    padding: 4%;
+    height: auto;
+    width: 100%;
+}
+
+.why .heading {
+    text-align: center;
+    font-size: 3em;
+    width: 30%;
+    margin:auto;
+    margin-bottom: 4%;
+}
+
+.why p {
+    line-height: 1.2;
+    font-size: 1.4em;
+}
+
+.divider {
+    width: 60%;
+    border-top: 1px solid #e6e6e6;
+    margin: 4% auto 4% auto;
+}
+
+.pre_sponsors {
+    width: 100%;
+    height: 100%;
+}
+
+.pre_sponsors .heading {
+    text-align: center;
+    font-size: 3em;
+    width: 30%;
+    margin:auto;
+    margin-bottom: 4%;
+}
+
+.pre_sponsors div {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.pre_sponsors div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img2 {
+    background-image: url(../img/events/Keyboard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.contact {
+    padding: 4%;
+    height: auto;
+    width: 100%;
+}
+
+.contact .heading {
+    text-align: center;
+    font-size: 3em;
+    width: 30%;
+    margin:auto;
+    margin-bottom: 4%;
+}
+
+.contact p {
+    width: 80%;
+    margin: auto;
+    font-size: 1.4em;
 }
