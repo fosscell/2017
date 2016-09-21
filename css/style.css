@@ -259,13 +259,16 @@ a {
 }
 
 .gallery .preview {
+    margin-top: 4%;
     width: 50%;
-    height: auto;
+    height: 400px;
     float: left;
     margin-left: 2%;
 }
 
 .gallery .preview img {
+    margin: auto;
+    border-radius: 10px;
     max-height: 100%;
     max-width: 100%;
 }
