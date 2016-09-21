@@ -383,12 +383,9 @@ a {
 }
 
 .why {
-/*    overflow: auto;*/
     padding: 4%;
-    height: 80%;
-    overflow: hidden;
+    height: 100%;
     width: 100%;
-    border: 1px solid red;
 }
 
 .why .heading {
@@ -406,16 +403,20 @@ a {
     color: #666666;
 }
 
-.why .content {
+.why .content{
+    border: 5px solid #efefef;
+    overflow: auto;
+    padding-left: 10px;
+    max-height: 400px;
     margin-left: -10%;
-    margin-top: 5%;
+    margin-top: 7%;
     width: 80%;
     float: left;
 }
 
-.why .content p {
-    line-height: 1.2;
-    font-size: 1.4em;
+.why .content .wrap {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .divider {
@@ -430,22 +431,44 @@ a {
 }
 
 .pre_sponsors .heading {
+    text-transform: uppercase;
+    border-bottom: 5px solid #666666;
+    margin-left: -11.5%;
+    margin-top: 18%;
+    padding-bottom: 20px;
+    float: left;
+    transform: rotate(-90deg);
+    font-weight: 800;
     text-align: center;
-    font-size: 3em;
-    width: 30%;
-    margin:auto;
-    margin-bottom: 4%;
+    font-size: 7em;
+    width: 40%;
+    color: #666666;
 }
 
-.pre_sponsors div {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 7%;
+.pre_sponsors .wrapper {
+    float: left;
+    width: 70%;
+    margin-left: -10%;
+    margin-top: 7%;
 }
 
-.pre_sponsors div img {
-    max-width: 100%;
-    max-height: 100%;
+.pre_sponsors .head {
+    font-size: 2em;
+    margin-bottom: 2%;
+    font-weight: 800;
+}
+
+.pre_sponsors .wrapper .content{
+    border: 5px solid #efefef;
+    overflow: auto;
+    padding-left: 10px;
+    max-height: 400px;
+    width: 100%;
+}
+
+.pre_sponsors .content .wrap {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .img2 {
@@ -463,11 +486,18 @@ a {
 }
 
 .contact .heading {
+    text-transform: uppercase;
+    border-bottom: 5px solid #666666;
+    margin-left: -11.5%;
+    margin-top: 18%;
+    padding-bottom: 20px;
+    float: left;
+    transform: rotate(-90deg);
+    font-weight: 800;
     text-align: center;
-    font-size: 3em;
-    width: 30%;
-    margin:auto;
-    margin-bottom: 4%;
+    font-size: 7em;
+    width: 40%;
+    color: #666666;
 }
 
 .contact p {

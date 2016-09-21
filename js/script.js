@@ -4,7 +4,7 @@ $("document").ready(function(){
         $(".preview img").attr("src", src);
     });
     
-    $('.set')
+    $('.set, .content')
         .jScrollPane({
             mouseWheelSpeed: 70,
             autoReinitialise: true
