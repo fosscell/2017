@@ -62,6 +62,7 @@ body {
     font-family: 'Myriad';
     overflow: auto;
     height: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -223,7 +224,7 @@ a {
 }
 
 .gallery {
-    padding: 4%;
+    padding: 1%;
     height: auto;
     width: 100%;
 }
@@ -231,9 +232,9 @@ a {
 .gallery .heading {
     text-align: center;
     font-size: 3em;
-    width: 30%;
+    width: 50%;
     margin:auto;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 .gallery .set {
@@ -241,33 +242,43 @@ a {
     margin-left: 5%;
     width: 40%;
     float: left;
-/*    padding: 1%;*/
+    border-left: 5px solid #666666;
+    padding-left: 15%;
     overflow: auto;
     max-height: 500px;
 }
 
 .gallery .set .hover {
     margin: 2%;
-    width: 46%;
-    float: left;
+    width: 42%;
+    float: right;
 }
 
 .gallery .set .hover img {
     z-index: -2;
+    border-radius: 4px;
     max-width: 100%;
     max-height: 100%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out:
+}
+
+.gallery .set .hover img:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
 }
 
 .gallery .preview {
     margin-top: 4%;
     width: 50%;
-    height: 400px;
     float: left;
-    margin-left: 2%;
+    margin-left: 5%;
+    border-right: 5px solid #666;
+    padding-right: 5%;
 }
 
 .gallery .preview img {
     margin: auto;
+    box-shadow: 0 1px 8px #ccc;
     border-radius: 10px;
     max-height: 100%;
     max-width: 100%;
@@ -377,9 +388,8 @@ a {
 
 .pre_sponsors div {
     width: 80%;
-    height: 80%;
     margin: auto;
-    margin-bottom: 4%;
+    margin-bottom: 7%;
 }
 
 .pre_sponsors div img {
