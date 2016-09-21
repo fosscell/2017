@@ -306,47 +306,38 @@ a {
 
 .pre_speakers {
     padding: 4%;
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
 .pre_speakers .heading {
-    margin-left: -7%;
-    margin-top: 15%;
+    text-transform: uppercase;
+    border-bottom: 5px solid #666666;
+    margin-left: -15%;
+    margin-top: 18%;
+    padding-bottom: 20px;
     float: left;
     transform: rotate(-90deg);
     font-weight: 800;
     text-align: center;
     font-size: 7em;
-    width: 30%;
+    width: 40%;
     color: #666666;
 }
-/*
-
-.pre_speakers .heading {
-    text-align: center;
-    font-size: 3em;
-    width: 30%;
-    margin:auto;
-    margin-bottom: 4%;
-}
-*/
 
 .pre_speakers .grid {
-    padding: 2%;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pre_speakers .grid .photo {
     float: left;
+    border: 1px solid red;
+    padding: 2%;
+    height: 80%;
+    width: 80%;
+    margin-left: -10%;
+    margin-top: 4%;
 }
 
 .pre_speakers .grid .photo {
     padding-bottom: 2%;
-    width: 16%;
+    width: 25%;
     float: left;
 }
 
@@ -449,26 +440,32 @@ a {
     float: left;
     width: 70%;
     margin-left: -10%;
-    margin-top: 7%;
-}
-
-.pre_sponsors .head {
-    font-size: 2em;
-    margin-bottom: 2%;
-    font-weight: 800;
+    margin-top: 4%;
 }
 
 .pre_sponsors .wrapper .content{
     border: 5px solid #efefef;
     overflow: auto;
     padding-left: 10px;
-    max-height: 400px;
+    height: 500px;
     width: 100%;
+    background-color: #fff;
 }
 
 .pre_sponsors .content .wrap {
     margin-left: 2%;
     margin-right: 2%;
+}
+
+.pre_sponsors .content .wrap .sponsor_logo {
+    width: 25%;
+    margin: 4%;
+    padding: 1%;
+    float: left;
+}
+
+.pre_sponsors .content .wrap .sponsor_logo img {
+    width: 100%;
 }
 
 .img2 {
@@ -481,14 +478,14 @@ a {
 
 .contact {
     padding: 4%;
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
 .contact .heading {
     text-transform: uppercase;
     border-bottom: 5px solid #666666;
-    margin-left: -11.5%;
+    margin-left: -15%;
     margin-top: 18%;
     padding-bottom: 20px;
     float: left;
@@ -500,16 +497,21 @@ a {
     color: #666666;
 }
 
-.contact p {
-    line-height: 1.2;
+.contact .content{
+    border: 5px solid #efefef;
+    overflow: auto;
+    padding-left: 10px;
+    max-height: 400px;
+    margin-left: -10%;
+    margin-top: 7%;
     width: 80%;
-    margin: auto;
-    font-size: 1.4em;
-    text-align: center;
+    float: left;
 }
 
-.contact p span {
-    color: green;
+.contact .content .wrap {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .footer {
