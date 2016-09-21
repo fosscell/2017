@@ -124,6 +124,75 @@ a {
     clear: both;
 }
 
+@-webkit-keyframes fadeIn { 
+    from { 
+        opacity:0; 
+    } to { 
+        opacity:1; 
+    } 
+}
+
+@-moz-keyframes fadeIn { 
+    from { 
+        opacity:0;
+    } to { 
+        opacity:1;
+    } 
+}
+
+@keyframes fadeIn { 
+    from { 
+        opacity:0; 
+    } to { 
+        opacity:1;
+    } 
+}
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+ 
+.fade-in.head1 {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+ 
+.fade-in.head2 {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    animation-delay: 1.2s;
+}
+ 
+.fade-in.head3 {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+.fade-in.brochure {
+    -webkit-animation-delay: 2.6s;
+    -moz-animation-delay: 2.6s;
+    animation-delay: 2.6s;
+}
+
+.fade-in.social {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
 .front {
     z-index: 2;
     overflow: hidden;
@@ -486,7 +555,8 @@ sup {
 }
 
 .pre_sponsors .content .wrap .sponsor_logo img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .img2 {
