@@ -196,13 +196,29 @@ a {
 .about {
     padding: 2%;
     padding-left: 0;
-    height: 50%;
+    height: 90%;
     width: 100%;
     overflow: hidden;
 }
 
+.about .heading {
+    border-bottom: 5px solid #666666;
+    margin-left: -11%;
+    margin-top: 18%;
+    padding-bottom: 20px;
+    float: left;
+    transform: rotate(-90deg);
+    font-weight: 800;
+    text-align: center;
+    font-size: 7em;
+    width: 40%;
+    color: #666666;
+}
+
 .about .image {
-    width: 45%;
+    margin-top: 10%;
+    margin-left: -15%;
+    width: 40%;
     height: auto;
     float: left;
     background-size: contain;
@@ -218,9 +234,9 @@ a {
     font-size: 1.2em;
     text-align: center;
     line-height: 1.1;
-    width: 55%;
+    width: 40%;
     float: left;
-    margin-top: 5%;
+    margin-top: 14%;
 }
 
 .gallery {
@@ -230,20 +246,24 @@ a {
 }
 
 .gallery .heading {
+    margin-left: -7%;
+    margin-top: 15%;
+    float: left;
+    transform: rotate(-90deg);
+    font-weight: 800;
     text-align: center;
-    font-size: 3em;
-    width: 50%;
-    margin:auto;
-    margin-bottom: 3%;
+    font-size: 7em;
+    width: 30%;
+    color: #666666;
 }
 
 .gallery .set {
+    margin-left: -10%;
     margin-bottom: 5%;
-    margin-left: 5%;
     width: 40%;
     float: left;
     border-left: 5px solid #666666;
-    padding-left: 15%;
+/*    padding-left: 15%;*/
     overflow: auto;
     max-height: 500px;
 }
@@ -268,8 +288,8 @@ a {
 }
 
 .gallery .preview {
-    margin-top: 4%;
-    width: 50%;
+    margin-top: 6.5%;
+    width: 40%;
     float: left;
     margin-left: 5%;
     border-right: 5px solid #666;
@@ -291,12 +311,26 @@ a {
 }
 
 .pre_speakers .heading {
+    margin-left: -7%;
+    margin-top: 15%;
+    float: left;
+    transform: rotate(-90deg);
+    font-weight: 800;
+    text-align: center;
+    font-size: 7em;
+    width: 30%;
+    color: #666666;
+}
+/*
+
+.pre_speakers .heading {
     text-align: center;
     font-size: 3em;
     width: 30%;
     margin:auto;
     margin-bottom: 4%;
 }
+*/
 
 .pre_speakers .grid {
     padding: 2%;
@@ -349,20 +383,37 @@ a {
 }
 
 .why {
+/*    overflow: auto;*/
     padding: 4%;
-    height: auto;
+    height: 80%;
+    overflow: hidden;
     width: 100%;
+    border: 1px solid red;
 }
 
 .why .heading {
+    text-transform: uppercase;
+    border-bottom: 5px solid #666666;
+    margin-left: -15%;
+    margin-top: 18%;
+    padding-bottom: 20px;
+    float: left;
+    transform: rotate(-90deg);
+    font-weight: 800;
     text-align: center;
-    font-size: 3em;
-    width: 30%;
-    margin:auto;
-    margin-bottom: 4%;
+    font-size: 7em;
+    width: 40%;
+    color: #666666;
 }
 
-.why p {
+.why .content {
+    margin-left: -10%;
+    margin-top: 5%;
+    width: 80%;
+    float: left;
+}
+
+.why .content p {
     line-height: 1.2;
     font-size: 1.4em;
 }
