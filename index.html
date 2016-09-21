@@ -55,6 +55,7 @@
         <!--Font CSS-->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
         <link rel="stylesheet" type="text/css" href="css/thumbnail-slider.css" />
         <link rel="stylesheet" type="text/css" href="css/thums2.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -157,73 +158,40 @@
         <div class="divider"></div>
         
         <div class="gallery">
-            <div class="heading">Gallery</div>
-            <div id="gallery_matter" style="color: #fff;">
-                <div style="background:#fff;margin-bottom:100px;color: #fff;">
-                    <div id="thumbnail-slider">
-                        <div class="inner">
-                            <ul>
-                                <li>
-                                  <a class="thumb" href="img/events/00.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/01.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/02.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/03.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/04.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/05.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/06.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/07.jpg"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="thumbs2" style="display:none;">
-                        <div class="inner">
-                            <ul>
-                                <li>
-                                  <a class="thumb" href="img/events/00.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/01.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/02.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/03.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/04.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/05.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/06.jpg"></a>
-                                </li>
-                                <li>
-                                  <a class="thumb" href="img/events/07.jpg"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="closeBtn">CLOSE</div>
-                    </div>
-                </div>
+            <div class="heading">Memories</div>
+            <div class="set">
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/01.jpg" /></div>
+                <div class="hover"><img src="img/events/02.jpg" /></div>
+                <div class="hover"><img src="img/events/03.jpg" /></div>
+                <div class="hover"><img src="img/events/04.jpg" /></div>
+                <div class="hover"><img src="img/events/05.jpg" /></div>
+                <div class="hover"><img src="img/events/06.jpg" /></div>
+                <div class="hover"><img src="img/events/07.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
+                <div class="hover"><img src="img/events/00.jpg" /></div>
             </div>
+            <div class="preview"><img src="img/events/00.jpg" /></div>
         </div>
+        <div class="clearfix"></div>
               
         <div class="filler img1"></div>
                 
@@ -325,13 +293,20 @@
         <div class="filler img2"></div>
         <div class="contact" id="contact">
             <div class="heading">Reach Us</div>
-            <p>If you have any query, don't hesitate to contact us!</p>
-            <p>Shoot us a email at <span><a href="mailto:info@fossmeet.in">info@fossmeet.in</a></span></p>
+            <p>Want to become a sponsor</p>
+            <p>Send us an email at <span><a href="mailto:info@fossmeet.in">info@fossmeet.in</a></span></p>
             <p>We promise to reply in a day.</p>
         </div>
         
+        <div class="footer">Creative and Intelletual minds of NIT Calicut</div>
         <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/enscroll-0.6.2.min.js"></script>
         <script type="text/javascript" src="js/thumbnail-slider.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        $('.set').enscroll({
+            showOnHover: true,
+            verticalTrackClass: 'track3',
+            verticalHandleClass: 'handle3'
+        });
     </body>
 </html>
