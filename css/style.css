@@ -326,30 +326,32 @@ a {
 }
 
 .pre_speakers .grid {
+    border: 5px solid #efefef;
     float: left;
-    border: 1px solid red;
     padding: 2%;
     height: 80%;
     width: 80%;
     margin-left: -10%;
-    margin-top: 4%;
+    margin-top: 6%;
 }
 
 .pre_speakers .grid .photo {
+    margin-top: 2%;
+    margin-bottom: 2%;
     padding-bottom: 2%;
-    width: 25%;
+    width: 32%;
+    height: auto;
     float: left;
 }
 
 .pre_speakers .grid .photo img {
+    object-fit: contain;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    max-width: 100%;
-    max-height: 100%;
-    width: 111px;
-    height: 111px;
+    width: 150px;
+    height: 150px;
 }
 
 .photo_content {
