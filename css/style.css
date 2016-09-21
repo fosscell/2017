@@ -193,6 +193,24 @@ a {
     box-shadow: inset 0 100px 0 0 #fff;
 }
 
+.social ul {
+    padding-left: 5%;
+    width: 50%;
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 90%;
+    right: 0%;
+    list-style-type: none;
+    font-size: 1.4em;
+}
+
+.social ul li {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: inline-block;
+}
+
 .about {
     padding: 2%;
     padding-left: 0;
@@ -497,23 +515,6 @@ a {
     font-size: 7em;
     width: 40%;
     color: #666666;
-}
-
-.contact .content{
-    border: 5px solid #efefef;
-    overflow: auto;
-    padding-left: 10px;
-    max-height: 400px;
-    margin-left: -10%;
-    margin-top: 7%;
-    width: 80%;
-    float: left;
-}
-
-.contact .content .wrap {
-    width: 100%;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 .footer {
