@@ -613,11 +613,12 @@ sup {
 
 .contact .wrap .organizer img {
     margin-top: 5%;
+    margin-left: 5%;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    width: 19em;
-    height: 19em;
+    width: 15em;
+    height: 15em;
 }
 
 .footer {
