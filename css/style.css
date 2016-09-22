@@ -602,6 +602,15 @@ sup {
     text-align: center;
 }
 
+.contact .wrap .email a {
+    color: #4285f4;
+    border-bottom: 1px dashed;
+}
+
+.contact .wrap .email a:hover {
+    border-bottom: none;
+}
+
 .contact .wrap .organizer {
     margin-top: 4%;
 }
@@ -613,10 +622,8 @@ sup {
 
 .contact .wrap .organizer img {
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 11%;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
     width: 15em;
     height: 15em;
 }
