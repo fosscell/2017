@@ -72,7 +72,7 @@ a {
 
 .logo {
     position: fixed;
-    top: 0.7%;
+    /*top: 0.7%;*/
     cursor: pointer;
     left: 2%;
     width: 2%;
@@ -456,7 +456,15 @@ sup {
 }
 
 .img1 {
-    background-image: url(../img/events/Mozilla_band.png);
+    background-image: url(../img/events/fxos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.img3 {
+    background-image: url(../img/events/NITCHackathon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -560,7 +568,7 @@ sup {
 }
 
 .img2 {
-    background-image: url(../img/events/Keyboard.png);
+    background-image: url(../img/events/lectures.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
