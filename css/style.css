@@ -70,581 +70,581 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    position: fixed;
-    /*top: 0.7%;*/
-    cursor: pointer;
-    left: 2%;
-    width: 2%;
-    z-index: 1000000;
-}
-
-.logo img {
-    width: 100%;
-    height: 100%:
-}
-
-.header {
-    font-family: Lato;
-    z-index: 100000;
-    color: white;
-    padding: 0.7%;
-    position: fixed;
-/*    top: 0%;*/
-    width: 100%;
-    height: auto;
-    background-color: #111;
-}
-
-.header span {
-    margin-left: 5%;
-}
-
-.header span:hover {
-    cursor: pointer;
-
-}
-
-.header .menu {
-    margin-right: 4%;
-    height: 100%:
-    width: 80%;
-    float: right;
-}
-
-.menu ul li {
-    display: inline-block;
-}
-
-.menu ul li:hover {
-    cursor: pointer;
-}
-
-.empty {
-    height: 32px;
-}
-
-.clearfix {
-    clear: both;
-}
-
-@-webkit-keyframes fadeIn {
-    from {
-        opacity:0;
-    } to {
-        opacity:1;
+@media only screen and (min-width: 800px) {
+    .logo {
+        position: fixed;
+        /*top: 0.7%;*/
+        cursor: pointer;
+        left: 2%;
+        width: 2%;
+        z-index: 1000000;
     }
-}
 
-@-moz-keyframes fadeIn {
-    from {
-        opacity:0;
-    } to {
-        opacity:1;
+    .logo img {
+        width: 100%;
+        height: 100%:
     }
-}
 
-@keyframes fadeIn {
-    from {
-        opacity:0;
-    } to {
-        opacity:1;
+    .header {
+        font-family: Lato;
+        z-index: 100;
+        color: white;
+        padding: 0.7%;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color: #111;
     }
-}
-
-.fade-in {
-	opacity:0;  /* make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
-
-	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
-}
-
-.fade-in.head1 {
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    animation-delay: 0.7s;
-}
-
-.fade-in.head2 {
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay:1.2s;
-    animation-delay: 1.2s;
-}
-
-.fade-in.head3 {
-    -webkit-animation-delay: 1.6s;
-    -moz-animation-delay: 1.6s;
-    animation-delay: 1.6s;
-}
-
-.fade-in.brochure {
-    -webkit-animation-delay: 2.6s;
-    -moz-animation-delay: 2.6s;
-    animation-delay: 2.6s;
-}
-
-.fade-in.social {
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    animation-delay: 2s;
-}
-
-.front {
-    z-index: 2;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    background-color: #4285f4;
-    background-size: cover;
-}
-
-.front .img {
-    float: left;
-    margin-left: 10%;
-    margin-top: 4%;
-}
-
-.front .img svg {
-    fill: white;
-}
-
-.front .wrapper {
-    text-align: right;
-    padding: 7%;
-    width: 50%;
-    float: right;
-    height: auto;
-    color: white;
-}
-
-.front .wrapper .head1 {
-    margin-bottom: 3%;
-    font-size: 4em;
-}
-
-.front .wrapper .head2 {
-    margin-bottom: 3%;
-    font-size: 2.3em;
-}
-
-.front .wrapper .head3 {
-    margin-bottom: 3%;
-    font-size: 1.8em;
-}
-
-sup {
-    font-size: medium;
-    vertical-align: super;
-}
-
-.front .wrapper .brochure {
-    cursor: pointer;
-    float: right;
-    margin-top: 10%;
-    display: table;
-    width: auto;
-    text-transform: uppercase;
-    font-size: 1.4em;
-
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 0 0 0 #fff;
-	-webkit-transition: all ease 0.8s;
-	-moz-transition: all ease 0.8s;
-	transition: all ease 0.8s;
-}
-
-.front .wrapper .brochure:hover {
-    color: #111;
-    box-shadow: inset 0 100px 0 0 #fff;
-}
-
-.social ul {
-    padding-left: 5%;
-    width: 50%;
-    color: white;
-    text-align: right;
-    position: absolute;
-    top: 90%;
-    right: 0%;
-    list-style-type: none;
-    font-size: 1.4em;
-}
-
-.social ul li {
-    margin-left: 3%;
-    margin-right: 3%;
-    display: inline-block;
-}
-
-.about {
-    padding: 2%;
-    padding-left: 0;
-    height: 90%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.about .heading {
-    border-bottom: 5px solid #666666;
-    margin-left: -11%;
-    margin-top: 18%;
-    padding-bottom: 20px;
-    float: left;
-    transform: rotate(-90deg);
-    font-weight: 800;
-    text-align: center;
-    font-size: 7em;
-    width: 40%;
-    color: #666666;
-}
-
-.about .image {
-    margin-top: 10%;
-    margin-left: -15%;
-    width: 40%;
-    height: auto;
-    float: left;
-    background-size: contain;
-}
-
-.about .image img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.about .content {
-    padding: 10px;
-    font-size: 1.2em;
-    text-align: center;
-    line-height: 1.1;
-    width: 40%;
-    float: left;
-    margin-top: 14%;
-}
-
-.gallery {
-    padding: 1%;
-    height: auto;
-    width: 100%;
-}
-
-.gallery .heading {
-    margin-left: -7%;
-    margin-top: 15%;
-    float: left;
-    transform: rotate(-90deg);
-    font-weight: 800;
-    text-align: center;
-    font-size: 7em;
-    width: 30%;
-    color: #666666;
-}
-
-.gallery .set {
-    margin-left: -10%;
-    margin-bottom: 5%;
-    width: 40%;
-    float: left;
-    border-left: 5px solid #666666;
-/*    padding-left: 15%;*/
-    overflow: auto;
-    max-height: 500px;
-}
-
-.gallery .set .hover {
-    margin: 2%;
-    width: 42%;
-    float: right;
-}
-
-.gallery .set .hover img {
-    z-index: -2;
-    border-radius: 4px;
-    max-width: 100%;
-    max-height: 100%;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out:
-}
-
-.gallery .set .hover img:hover {
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
-}
-
-.gallery .preview {
-    margin-top: 6.5%;
-    width: 40%;
-    float: left;
-    margin-left: 5%;
-    border-right: 5px solid #666;
-    padding-right: 5%;
-}
-
-.gallery .preview img {
-    margin: auto;
-    box-shadow: 0 1px 8px #ccc;
-    border-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.pre_speakers {
-    padding: 4%;
-    height: 100%;
-    width: 100%;
-}
-
-.pre_speakers .heading {
-    text-transform: uppercase;
-    border-bottom: 5px solid #666666;
-    margin-left: -15%;
-    margin-top: 18%;
-    padding-bottom: 20px;
-    float: left;
-    transform: rotate(-90deg);
-    font-weight: 800;
-    text-align: center;
-    font-size: 7em;
-    width: 40%;
-    color: #666666;
-}
-
-.pre_speakers .grid {
-    border: 5px solid #efefef;
-    float: left;
-    padding: 2%;
-    height: 80%;
-    width: 80%;
-    margin-left: -10%;
-    margin-top: 6%;
-}
-
-.pre_speakers .grid .photo {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding-bottom: 2%;
-    width: 32%;
-    height: auto;
-    float: left;
-}
-
-.pre_speakers .grid .photo img {
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-
-.photo_content {
-    margin-top: 4%;
-    font-size: 1.4em;
-    display: block;
-    text-align: center;
-}
-
-.filler {
-    width: 100%;
-    height: 500px;
-    background-color: grey;
-}
-
-.img1 {
-    background-image: url(../img/events/fxos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.img3 {
-    background-image: url(../img/events/NITCHackathon.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.why {
-    padding: 4%;
-    height: 100%;
-    width: 100%;
-}
-
-.why .heading {
-    text-transform: uppercase;
-    border-bottom: 5px solid #666666;
-    margin-left: -15%;
-    margin-top: 18%;
-    padding-bottom: 20px;
-    float: left;
-    transform: rotate(-90deg);
-    font-weight: 800;
-    text-align: center;
-    font-size: 7em;
-    width: 40%;
-    color: #666666;
-}
-
-.why .content{
-    border: 5px solid #efefef;
-    overflow: auto;
-    padding-left: 10px;
-    max-height: 400px;
-    margin-left: -10%;
-    margin-top: 7%;
-    width: 80%;
-    float: left;
-}
-
-.why .content .wrap {
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.divider {
-    width: 60%;
-    border-top: 1px solid #e6e6e6;
-    margin: 4% auto 4% auto;
-}
-
-.pre_sponsors {
-    width: 100%;
-    height: 100%;
-}
-
-.pre_sponsors .heading {
-    text-transform: uppercase;
-    border-bottom: 5px solid #666666;
-    margin-left: -11.5%;
-    margin-top: 18%;
-    padding-bottom: 20px;
-    float: left;
-    transform: rotate(-90deg);
-    font-weight: 800;
-    text-align: center;
-    font-size: 7em;
-    width: 40%;
-    color: #666666;
-}
-
-.pre_sponsors .wrapper {
-    float: left;
-    width: 70%;
-    margin-left: -10%;
-    margin-top: 4%;
-}
-
-.pre_sponsors .wrapper .content{
-    border: 5px solid #efefef;
-    overflow: auto;
-    padding-left: 10px;
-    height: 500px;
-    width: 100%;
-    background-color: #fff;
-}
-
-.pre_sponsors .content .wrap {
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.pre_sponsors .content .wrap .sponsor_logo {
-    width: 25%;
-    margin: 4%;
-    padding: 1%;
-    float: left;
-}
-
-.pre_sponsors .content .wrap .sponsor_logo img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.img2 {
-    background-image: url(../img/events/lectures.JPG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.contact {
-    padding: 4%;
-    height: 100%;
-    width: 100%;
-}
-
-.contact .heading {
-    text-transform: uppercase;
-    border-bottom: 5px solid #666666;
-    margin-left: -15%;
-    margin-top: 18%;
-    padding-bottom: 20px;
-    float: left;
-    transform: rotate(-90deg);
-    font-weight: 800;
-    text-align: center;
-    font-size: 7em;
-    width: 40%;
-    color: #666666;
-}
-
-.contact .wrap {
-    padding: 5%;
-    margin-top: 5%;
-    width: 70%;
-    float: left;
-}
-
-.contact .wrap .email {
-    width: 100%;
-    font-size: 1.4em;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.contact .wrap .email a {
-    color: #4285f4;
-    border-bottom: 1px dashed;
-}
-
-.contact .wrap .email a:hover {
-    border-bottom: none;
-}
-
-.contact .wrap .organizer {
-    margin-top: 4%;
-}
-
-.contact .wrap .organizer h3 {
-    text-align: center;
-    font-size: 2em;
-}
-
-.contact .wrap .organizer img {
-    margin-top: 5%;
-    margin-left: 11%;
-    display: inline-block;
-    width: 15em;
-    height: 15em;
-}
-
-.footer {
-    font-size: 1em;
-    padding: 1%;
-    width: 100%;
-    text-align: center;
-    background-color: #fdfdfd;
-    box-shadow: 0px 10px 56px -10px rgba(17,17,17,0.41);
+
+    .header span {
+        margin-left: 5%;
+    }
+
+    .header span:hover {
+        cursor: pointer;
+    }
+
+    .header .menu {
+        margin-right: 4%;
+        height: 100%:
+        width: 80%;
+        float: right;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+    .menu li:hover {
+        cursor: pointer;
+    }
+
+    .empty {
+        height: 32px;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity:0;
+        } to {
+            opacity:1;
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        from {
+            opacity:0;
+        } to {
+            opacity:1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity:0;
+        } to {
+            opacity:1;
+        }
+    }
+
+    .fade-in {
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:1s;
+        -moz-animation-duration:1s;
+        animation-duration:1s;
+    }
+
+    .fade-in.head1 {
+        -webkit-animation-delay: 0.7s;
+        -moz-animation-delay: 0.7s;
+        animation-delay: 0.7s;
+    }
+
+    .fade-in.head2 {
+        -webkit-animation-delay: 1.2s;
+        -moz-animation-delay:1.2s;
+        animation-delay: 1.2s;
+    }
+
+    .fade-in.head3 {
+        -webkit-animation-delay: 1.6s;
+        -moz-animation-delay: 1.6s;
+        animation-delay: 1.6s;
+    }
+
+    .fade-in.brochure {
+        -webkit-animation-delay: 2.6s;
+        -moz-animation-delay: 2.6s;
+        animation-delay: 2.6s;
+    }
+
+    .fade-in.social {
+        -webkit-animation-delay: 2s;
+        -moz-animation-delay: 2s;
+        animation-delay: 2s;
+    }
+
+    .front {
+        z-index: 2;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        background-color: #4285f4;
+        background-size: cover;
+    }
+
+    .front .img {
+        float: left;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+
+    .front .img svg {
+        fill: white;
+    }
+
+    .front .wrapper {
+        text-align: right;
+        padding: 7%;
+        width: 50%;
+        float: right;
+        height: auto;
+        color: white;
+    }
+
+    .front .wrapper .head1 {
+        margin-bottom: 3%;
+        font-size: 4em;
+    }
+
+    .front .wrapper .head2 {
+        margin-bottom: 3%;
+        font-size: 2.3em;
+    }
+
+    .front .wrapper .head3 {
+        margin-bottom: 3%;
+        font-size: 1.8em;
+    }
+
+    sup {
+        font-size: medium;
+        vertical-align: super;
+    }
+
+    .front .wrapper .brochure {
+        cursor: pointer;
+        float: right;
+        margin-top: 10%;
+        display: table;
+        width: auto;
+        text-transform: uppercase;
+        font-size: 1.4em;
+
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 0 0 0 #fff;
+        -webkit-transition: all ease 0.8s;
+        -moz-transition: all ease 0.8s;
+        transition: all ease 0.8s;
+    }
+
+    .front .wrapper .brochure:hover {
+        color: #111;
+        box-shadow: inset 0 100px 0 0 #fff;
+    }
+
+    .social ul {
+        padding-left: 5%;
+        width: 50%;
+        color: white;
+        text-align: right;
+        position: absolute;
+        top: 90%;
+        right: 0%;
+        list-style-type: none;
+        font-size: 1.4em;
+    }
+
+    .social ul li {
+        margin-left: 3%;
+        margin-right: 3%;
+        display: inline-block;
+    }
+
+    .about {
+        padding: 2%;
+        padding-left: 0;
+        height: 90%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .about .heading {
+        border-bottom: 5px solid #666666;
+        margin-left: -11%;
+        margin-top: 18%;
+        padding-bottom: 20px;
+        float: left;
+        transform: rotate(-90deg);
+        font-weight: 800;
+        text-align: center;
+        font-size: 7em;
+        width: 40%;
+        color: #666666;
+    }
+
+    .about .image {
+        margin-top: 10%;
+        margin-left: -15%;
+        width: 40%;
+        height: auto;
+        float: left;
+        background-size: contain;
+    }
+
+    .about .image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .about .content {
+        padding: 10px;
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 1.1;
+        width: 40%;
+        float: left;
+        margin-top: 14%;
+    }
+
+    .gallery {
+        padding: 1%;
+        height: auto;
+        width: 100%;
+    }
+
+    .gallery .heading {
+        margin-left: -7%;
+        margin-top: 15%;
+        float: left;
+        transform: rotate(-90deg);
+        font-weight: 800;
+        text-align: center;
+        font-size: 7em;
+        width: 30%;
+        color: #666666;
+    }
+
+    .gallery .set {
+        margin-left: -10%;
+        margin-bottom: 5%;
+        width: 40%;
+        float: left;
+        border-left: 5px solid #666666;
+    /*    padding-left: 15%;*/
+        overflow: auto;
+        max-height: 500px;
+    }
+
+    .gallery .set .hover {
+        margin: 2%;
+        width: 42%;
+        float: right;
+    }
+
+    .gallery .set .hover img {
+        z-index: -2;
+        border-radius: 4px;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+        transition: box-shadow 0.3s ease-in-out:
+    }
+
+    .gallery .set .hover img:hover {
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+    }
+
+    .gallery .preview {
+        margin-top: 6.5%;
+        width: 40%;
+        float: left;
+        margin-left: 5%;
+        border-right: 5px solid #666;
+        padding-right: 5%;
+    }
+
+    .gallery .preview img {
+        margin: auto;
+        box-shadow: 0 1px 8px #ccc;
+        border-radius: 10px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .pre_speakers {
+        padding: 4%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .pre_speakers .heading {
+        text-transform: uppercase;
+        border-bottom: 5px solid #666666;
+        margin-left: -15%;
+        margin-top: 18%;
+        padding-bottom: 20px;
+        float: left;
+        transform: rotate(-90deg);
+        font-weight: 800;
+        text-align: center;
+        font-size: 7em;
+        width: 40%;
+        color: #666666;
+    }
+
+    .pre_speakers .grid {
+        border: 5px solid #efefef;
+        float: left;
+        padding: 2%;
+        height: 80%;
+        width: 80%;
+        margin-left: -10%;
+        margin-top: 6%;
+    }
+
+    .pre_speakers .grid .photo {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-bottom: 2%;
+        width: 32%;
+        height: auto;
+        float: left;
+    }
+
+    .pre_speakers .grid .photo img {
+        object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .photo_content {
+        margin-top: 4%;
+        font-size: 1.4em;
+        display: block;
+        text-align: center;
+    }
+
+    .filler {
+        width: 100%;
+        height: 500px;
+        background-color: grey;
+    }
+
+    .img1 {
+        background-image: url(../img/events/fxos.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .img3 {
+        background-image: url(../img/events/NITCHackathon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .why {
+        padding: 4%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .why .heading {
+        text-transform: uppercase;
+        border-bottom: 5px solid #666666;
+        margin-left: -15%;
+        margin-top: 18%;
+        padding-bottom: 20px;
+        float: left;
+        transform: rotate(-90deg);
+        font-weight: 800;
+        text-align: center;
+        font-size: 7em;
+        width: 40%;
+        color: #666666;
+    }
+
+    .why .content{
+        border: 5px solid #efefef;
+        overflow: auto;
+        padding-left: 10px;
+        max-height: 400px;
+        margin-left: -10%;
+        margin-top: 7%;
+        width: 80%;
+        float: left;
+    }
+
+    .why .content .wrap {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .divider {
+        width: 60%;
+        border-top: 1px solid #e6e6e6;
+        margin: 4% auto 4% auto;
+    }
+
+    .pre_sponsors {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pre_sponsors .heading {
+        text-transform: uppercase;
+        border-bottom: 5px solid #666666;
+        margin-left: -11.5%;
+        margin-top: 18%;
+        padding-bottom: 20px;
+        float: left;
+        transform: rotate(-90deg);
+        font-weight: 800;
+        text-align: center;
+        font-size: 7em;
+        width: 40%;
+        color: #666666;
+    }
+
+    .pre_sponsors .wrapper {
+        float: left;
+        width: 70%;
+        margin-left: -10%;
+        margin-top: 4%;
+    }
+
+    .pre_sponsors .wrapper .content{
+        border: 5px solid #efefef;
+        overflow: auto;
+        padding-left: 10px;
+        height: 500px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .pre_sponsors .content .wrap {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .pre_sponsors .content .wrap .sponsor_logo {
+        width: 25%;
+        margin: 4%;
+        padding: 1%;
+        float: left;
+    }
+
+    .pre_sponsors .content .wrap .sponsor_logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .img2 {
+        background-image: url(../img/events/lectures.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .contact {
+        padding: 4%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contact .heading {
+        text-transform: uppercase;
+        border-bottom: 5px solid #666666;
+        margin-left: -15%;
+        margin-top: 18%;
+        padding-bottom: 20px;
+        float: left;
+        transform: rotate(-90deg);
+        font-weight: 800;
+        text-align: center;
+        font-size: 7em;
+        width: 40%;
+        color: #666666;
+    }
+
+    .contact .wrap {
+        padding: 5%;
+        margin-top: 5%;
+        width: 70%;
+        float: left;
+    }
+
+    .contact .wrap .email {
+        width: 100%;
+        font-size: 1.4em;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .contact .wrap .email a {
+        color: #4285f4;
+        border-bottom: 1px dashed;
+    }
+
+    .contact .wrap .email a:hover {
+        border-bottom: none;
+    }
+
+    .contact .wrap .organizer {
+        margin-top: 4%;
+    }
+
+    .contact .wrap .organizer h3 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .contact .wrap .organizer img {
+        margin-top: 5%;
+        margin-left: 11%;
+        display: inline-block;
+        width: 15em;
+        height: 15em;
+    }
+
+    .footer {
+        font-size: 1em;
+        padding: 1%;
+        width: 100%;
+        text-align: center;
+        background-color: #fdfdfd;
+        box-shadow: 0px 10px 56px -10px rgba(17,17,17,0.41);
+    }
 }

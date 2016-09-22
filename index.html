@@ -58,7 +58,11 @@
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link href="https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/icons.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+        <link rel="stylesheet" type="text/css" href="css/sm-core-css.css" />
+        <link rel="stylesheet" type="text/css" href="css/mobileStyle.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/sm-simple.css" />
         <link rel="stylesheet" type="text/css" href="css/BModal.css" />
     </head>
 
@@ -67,15 +71,17 @@
             <img src="img/logo.svg" />
         </div>
         <div class="header">
-            <span>FOSSMeet '17</span>
-            <div class="menu">
-                <ul>
-                    <li><a href="http://fossmeet.in" target="_blank">FOSSMeet '16 Website &nbsp; |</a></li>
-                    <li onclick="smoothScroll.animateScroll('#why_sponsor_us')">&nbsp; Why Sponsor Us &nbsp; |</li>
-                    <li onclick="smoothScroll.animateScroll('#sponsors')">&nbsp; Previous Sponsors &nbsp; |</li>
-                    <li onclick="smoothScroll.animateScroll('#contact')">&nbsp; Reach Us</li>
-                </ul>
-            </div>
+            <span class="title">FOSSMeet '17</span>
+            <input id="main-menu-state" type="checkbox" />
+            <label class="main-menu-btn" for="main-menu-state">
+              <span class="main-menu-btn-icon"></span>
+            </label>
+            <ul id="main-menu" class="menu sm sm-vertical sm-simple">
+                <li><a href="http://fossmeet.in" target="_blank">FOSSMeet '16 Website &nbsp; |</a></li>
+                <li><a href="#why_sponsor_us">&nbsp; Why Sponsor Us &nbsp; |</a></li>
+                <li><a href="#sponsors">&nbsp; Previous Sponsors &nbsp; |</a></li>
+                <li><a href="#contact">&nbsp; Reach Us</a></li>
+            </ul>
         </div>
         <div class="clearfix"></div>
         <div class="empty"></div>    <!--   to negate the effect of fixed header-->
@@ -106,9 +112,9 @@
         <div class="about">
             <div class="heading wow fadeIn">ABOUT US</div>
             <div>
-            <div class="image"><img src="img/worldtux.png" /></div>
-            <div class="content wow fadeInUp">FOSSMeet is an annual event on Free and Open source software, conducted at National Institute of Technology, Calicut. Started with a vision to create a culture of innovation, evolution and open standards, the meet intends to support the FOSS community and the dissemination of FOSS ideology through hands-on sessions, discussions and lectures by eminent personalities. Nothing better to get you introduced to the world of FOSS.</div>
-                </div>
+                <div class="image"><img src="img/worldtux.png" /></div>
+                <div class="content wow fadeInUp">FOSSMeet is an annual event on Free and Open source software, conducted at National Institute of Technology, Calicut. Started with a vision to create a culture of innovation, evolution and open standards, the meet intends to support the FOSS community and the dissemination of FOSS ideology through hands-on sessions, discussions and lectures by eminent personalities. Nothing better to get you introduced to the world of FOSS.</div>
+            </div>
         </div>
 
         <div class="divider"></div>
@@ -149,7 +155,6 @@
                 <div class="hover"><img src="img/events/34.jpg" /></div>
                 <div class="hover"><img src="img/events/35.jpg" /></div>
                 <div class="hover"><img src="img/events/36.jpg" /></div>
-                <!--<div class="hover"><img src="img/events/37.jpg" /></div>-->
             </div>
             <div class="preview"><img src="img/events/01.jpg" /></div>
             <div class="clearfix"></div>
@@ -261,7 +266,7 @@
 
         <div class="divider"></div>
 
-        <!-- Very bad Coding practice, should not be used again -->
+       <!-- Very bad Coding practice, should not be used again -->
         <div class="pre_sponsors" id="sponsors">
             <div class="heading">Sponsors</div>
             <div class="wrapper">
@@ -271,14 +276,14 @@
                         <div class="sponsor_logo"><img src="img/sponsors/icfoss.png" /></div>
                         <div class="sponsor_logo"><img src="img/sponsors/thinkdigit.png" /></div>
                         <div class="sponsor_logo"><img src="img/sponsors/catholicsyrianbank.png" /></div>
-                        <div class="sponsor_logo" style="margin-top: -10%"><img src="img/sponsors/linuxjournal.png" /></div>
-                        <div class="sponsor_logo" style="margin-top: -25%"><img src="img/sponsors/nrcfoss.jpg" /></div>
-                        <div class="sponsor_logo" style="margin-top: -8%"><img src="img/sponsors/itatkerala.jpg" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/linuxjournal.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/nrcfoss.jpg" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/itatkerala.jpg" /></div>
                         <div class="sponsor_logo"><img src="img/sponsors/keralaitmission.png" /></div>
-                        <div class="sponsor_logo" style="margin-top: -28%"><img src="img/sponsors/vestigeitlabs.png" /></div>
-                        <div class="sponsor_logo" style="margin-top: -18%"><img src="img/sponsors/PCQuest.jpg" /></div>
-                        <div class="sponsor_logo" style="margin-left: -33%; margin-top: -3%;"><img src="img/sponsors/Airtel.jpg" /></div>
-                        <div class="sponsor_logo" style="margin-left: -6%;"><img src="img/sponsors/DTDC.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/vestigeitlabs.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/PCQuest.jpg" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/Airtel.jpg" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/DTDC.png" /></div>
                     </div>
                 </div>
             </div>
@@ -293,8 +298,8 @@
                     </div>
                     <div class="organizer">
                         <h3>Organizers</h3>
-                          <img src="img/csea.png" />
-                          <img src="img/fosscell.gif" />
+                        <img src="img/fosscell.gif" />
+                        <img src="img/csea.png" />
                     </div>
                 </div>
             </div>
@@ -307,14 +312,10 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"><!-- intentionally left blank --></h4>
+                <h4 class="modal-title"></h4>
               </div>
               <div class="modal-body">
-                <!-- intentionally left blank -->
               </div>
-              <!--<div class="modal-footer">
-                &nbsp;<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>-->
             </div>
           </div>
         </div>
@@ -323,6 +324,7 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/mwheelIntent.js"></script>
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
         <script type="text/javascript" src="js/wow.js"></script>
         <script type="text/javascript" src="js/smooth-scroll.js"></script>
         <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
