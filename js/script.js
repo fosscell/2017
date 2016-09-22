@@ -19,7 +19,7 @@ $("document").ready(function(){
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-                               
+
     if (!isMobile.any()) {
         $('.hover img').mouseover(function() {
             var src = this.src;
@@ -41,7 +41,7 @@ $("document").ready(function(){
             easing: 'easeInOutCubic',
             updateURL: false,
         });
-        
+
         $('.set, .content, .grid')
             .jScrollPane({
                 mouseWheelSpeed: 70,
@@ -55,7 +55,7 @@ $("document").ready(function(){
             );
     } else {
         $('.preview, .logo').remove();
-    
+
         $('.filler').addClass('divider').removeClass('filler');
 
         var array = ["FOSSMeet '16 Website", "Why Sponsor Us", "Previous Sponsors", "Reach Us"];
@@ -65,7 +65,7 @@ $("document").ready(function(){
             console.log(this.text());
             $(this).text(array[j++]);
         });
-    
+
         $('#main-menu').smartmenus();
 
         var $mainMenuState = $('#main-menu-state');
@@ -73,12 +73,12 @@ $("document").ready(function(){
             $mainMenuState.change(function(e) {
                 var $menu = $('#main-menu');
                 if (this.checked) {
-                    $menu.hide().slideDown(250, function() { 
-                        $menu.css('display', ''); 
+                    $menu.hide().slideDown(250, function() {
+                        $menu.css('display', '');
                     });
                 } else {
-                    $menu.show().slideUp(250, function() { 
-                        $menu.css('display', ''); 
+                    $menu.show().slideUp(250, function() {
+                        $menu.css('display', '');
                     });
                 }
             });
@@ -103,5 +103,5 @@ var DisplaySpecialLink = function(url, desc){
 };
 
 var PreviewURL = function(url){
-  DisplaySpecialLink("https://docs.google.com/gview?embedded=true&url=" + url, "<a href='" + url + "' style='text-decoration:none;' download='true'>Download Brochure</a>");
+  DisplaySpecialLink("https://docs.google.com/gview?embedded=true&url=" + url, "<a href='" + url + "' style='text-decoration: none;' download='true'>Download Brochure</a>");
 };
