@@ -59,6 +59,7 @@
         <link href="https://file.myfontastic.com/dSdPJGEFUgx3CBxPv3Buyi/icons.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/BModal.css" />
     </head>
 
     <body>
@@ -86,7 +87,7 @@
                 <div class="head1 head fade-in">FOSSMeet '17</div>
                 <div class="head2 head fade-in">Think Free, Code Better</div>
                 <div class="head3 head fade-in">February 24<sup>th</sup> - 26<sup>th</sup></div>
-                <div class="brochure fade-in">Download Brochure</div>
+                <div class="brochure fade-in" onclick="PreviewURL('http://tathva.org/tathva.org/brochure.pdf')">Download Brochure</div>
             </div>
             <div class="social fade-in">
                 <ul>
@@ -300,7 +301,27 @@
             <div class="clearfix"></div>
 
         <div class="footer">&copy; Creative minds @ NITC</div>
+
+        <div class="modal fade" id="ViewBrochureModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><!-- intentionally left blank --></h4>
+              </div>
+              <div class="modal-body">
+                <!-- intentionally left blank -->
+              </div>
+              <!--<div class="modal-footer">
+                &nbsp;<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>-->
+            </div>
+          </div>
+        </div>
+
+>>>>>>> 3a6bebbd8b8aaf67981604184fbe608ab1301920
         <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/mwheelIntent.js"></script>
         <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
         <script type="text/javascript" src="js/wow.js"></script>
