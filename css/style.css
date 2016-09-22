@@ -116,6 +116,10 @@ a {
     display: inline-block;
 }
 
+.menu ul li:hover {
+    cursor: pointer;
+}
+
 .empty {
     height: 32px;
 }

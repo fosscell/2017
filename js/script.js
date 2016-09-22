@@ -14,6 +14,12 @@ $("document").ready(function(){
 
     wow.init();
 
+    smoothScroll.init({
+        speed: 1500,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+    });
+    
     $('.set, .content, .grid')
         .jScrollPane({
             mouseWheelSpeed: 70,
