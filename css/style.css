@@ -463,6 +463,14 @@ sup {
     background-position: center;
 }
 
+.img3 {
+    background-image: url(../img/events/NITCHackathon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .why {
     padding: 4%;
     height: 100%;
