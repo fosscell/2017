@@ -77,7 +77,7 @@ a {
         cursor: pointer;
         left: 2%;
         width: 2%;
-        z-index: 1000000;
+        z-index: 100;
     }
 
     .logo img {
