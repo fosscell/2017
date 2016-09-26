@@ -644,7 +644,9 @@ a {
         padding: 1%;
         width: 100%;
         text-align: center;
-        background-color: #fdfdfd;
+        /*background-color: #fdfdfd;*/
+        background-color: #111;
+        color: #FFF;
         box-shadow: 0px 10px 56px -10px rgba(17,17,17,0.41);
     }
 }
