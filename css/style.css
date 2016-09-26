@@ -544,28 +544,21 @@ a {
         margin-top: 4%;
     }
 
-    .pre_sponsors .wrapper .content{
-        border: 5px solid #efefef;
-        overflow: auto;
+    .pre_sponsors .wrapper .content1{
         padding-left: 10px;
         height: 500px;
         width: 100%;
-        background-color: #fff;
+        margin-left: 15%;
     }
 
-    .pre_sponsors .content .wrap {
+    .pre_sponsors .content1 .wrap {
+        width: 100%;
+        height: 100%;
         margin-left: 2%;
         margin-right: 2%;
     }
 
-    .pre_sponsors .content .wrap .sponsor_logo {
-        width: 25%;
-        margin: 4%;
-        padding: 1%;
-        float: left;
-    }
-
-    .pre_sponsors .content .wrap .sponsor_logo img {
+    .pre_sponsors .content1 .wrap img {
         max-width: 100%;
         max-height: 100%;
     }
