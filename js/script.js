@@ -42,7 +42,7 @@ $("document").ready(function(){
             updateURL: false,
         });
 
-        $('.set, .content, .grid')
+        $('.set, .content')
             .jScrollPane({
                 mouseWheelSpeed: 70,
                 autoReinitialise: true

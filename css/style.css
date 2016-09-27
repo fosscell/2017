@@ -357,6 +357,8 @@ a {
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
         -webkit-transition: box-shadow 0.3s ease-in-out;
         transition: box-shadow 0.3s ease-in-out;
+        height: 144px;
+        width: 215px;
     }
 
     .gallery .set .hover img:hover {
@@ -376,8 +378,8 @@ a {
         margin: auto;
         box-shadow: 0 1px 8px #ccc;
         border-radius: 10px;
-        max-height: 100%;
         max-width: 100%;
+        max-height: 100%;
     }
 
     .pre_speakers {
@@ -390,7 +392,7 @@ a {
         text-indent: -110000px;
         margin-left: -2%;
         margin-right: 0%;
-        margin-top: 3%;
+        margin-top: 1%;
         float: left;
         width: 20%;
         height: 500px;
@@ -402,18 +404,17 @@ a {
     .pre_speakers .grid {
         border: 5px solid #efefef;
         float: left;
-        padding: 2%;
-        height: 80%;
-        width: 80%;
+        padding: 1%;
+        max-width: 80%;
         margin-left: 1%;
-        margin-top: 6%;
+        margin-top: -2%;
     }
 
     .pre_speakers .grid .photo {
-        margin-top: 2%;
-        margin-bottom: 2%;
-        padding-bottom: 2%;
-        width: 32%;
+/*        margin-top: 2%;*/
+        margin-bottom: 1%;
+/*        padding-bottom: 2%;*/
+        width: 20%;
         height: auto;
         float: left;
     }
@@ -425,8 +426,8 @@ a {
         margin-left: auto;
         margin-right: auto;
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
     }
 
     .photo_content {
@@ -617,7 +618,6 @@ a {
     }
 
     .img4 {
-        height: 100vh;
         background-image: url(../img/events/team.jpg);
         background-size: contain;
         background-repeat: no-repeat;
