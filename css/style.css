@@ -268,6 +268,7 @@ a {
 
     .social ul {
         padding-left: 5%;
+        margin-right: 6%;
         width: 50%;
         color: white;
         text-align: right;
@@ -293,16 +294,16 @@ a {
     }
 
     .about .heading {
-        border-bottom: 5px solid #666666;
+/*        border-bottom: 5px solid #666666;*/
         margin-left: -11%;
         margin-top: 18%;
-        padding-bottom: 20px;
+/*        padding-bottom: 20px;*/
         float: left;
         transform: rotate(-90deg);
         font-weight: 800;
         text-align: center;
-        font-size: 7em;
-        width: 40%;
+        font-size: 6em;
+        width: 50%;
         color: #666666;
     }
 
@@ -338,12 +339,12 @@ a {
 
     .gallery .heading {
         margin-left: -7%;
-        margin-top: 15%;
+        margin-top: 17%;
         float: left;
         transform: rotate(-90deg);
         font-weight: 800;
         text-align: center;
-        font-size: 7em;
+        font-size: 6em;
         width: 30%;
         color: #666666;
     }
@@ -411,7 +412,7 @@ a {
         transform: rotate(-90deg);
         font-weight: 800;
         text-align: center;
-        font-size: 7em;
+        font-size: 6em;
         width: 40%;
         color: #666666;
     }
@@ -490,25 +491,31 @@ a {
         transform: rotate(-90deg);
         font-weight: 800;
         text-align: center;
-        font-size: 7em;
+        font-size: 6em;
         width: 40%;
         color: #666666;
     }
 
-    .why .content{
-        border: 5px solid #efefef;
-        overflow: auto;
-        padding-left: 10px;
-        max-height: 400px;
-        margin-left: -10%;
-        margin-top: 7%;
+    .why .wrap {
+        padding: 2%;
         width: 80%;
         float: left;
+        border: 5px solid #efefef;
+        margin-left: -10%;
+        margin-top: 10%;
     }
-
-    .why .content .wrap {
-        margin-left: 2%;
-        margin-right: 2%;
+    
+    .why .wrap ul {
+        font-size: 1.3em;
+    }
+    
+    .why .wrap ul li {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .why .wrap ul li span {
+        font-size: 1.4em;
+        font-weight: 800;
     }
 
     .divider {
@@ -532,7 +539,7 @@ a {
         transform: rotate(-90deg);
         font-weight: 800;
         text-align: center;
-        font-size: 7em;
+        font-size: 6em;
         width: 40%;
         color: #666666;
     }
@@ -587,7 +594,7 @@ a {
         transform: rotate(-90deg);
         font-weight: 800;
         text-align: center;
-        font-size: 7em;
+        font-size: 6em;
         width: 40%;
         color: #666666;
     }
