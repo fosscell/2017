@@ -261,7 +261,7 @@
         max-width: 100%;
     }
     
-    .pre_sponsors .wrapper .content .wrap .sponsor_logo {
+    .pre_sponsors .wrapper .content1 .wrap .sponsor_logo {
         margin-top: 7%;
         margin-bottom: 7%;
         display: inline-block;
@@ -270,12 +270,12 @@
         width: 100%;
     }
     
-    .pre_sponsors .wrapper .content .wrap .sponsor_logo img {
+    .pre_sponsors .wrapper .content1 .wrap .sponsor_logo img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 200px;
+        max-height: 200px;
     }
     
     .contact {
@@ -725,27 +725,67 @@
     }
 
     .pre_sponsors .wrapper {
-        float: left;
-        width: 70%;
-        margin-left: -10%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 4%;
     }
 
     .pre_sponsors .wrapper .content1{
         padding-left: 10px;
-        height: 500px;
         width: 100%;
+    }
+
+    .pre_sponsors .content1 .wrap .sponsor_logo {
+        width: 25%;
+        float: left;
+    }
+    
+    .lj {
+        margin-top: -10%;
+        margin-left: 10%;
+    }
+    
+    .thinkdigit {
+        margin-top: 5%;
+    }
+    
+    .pcquest {
+        margin-top: -22%;
+        margin-left: 4%;
+    }
+    
+    .airtel {
+        margin-top: -17%;
+        margin-left: -55%;
+    }
+    
+    .dtdc {
+        margin-left: -50%;
+        margin-top: -2%;
+    }
+    
+    .nrcfoss {
+        margin-left: 5%;
+    }
+    .vestige {
+/*        margin-top: -43%;*/
         margin-left: 15%;
     }
-
-    .pre_sponsors .content1 .wrap {
-        width: 100%;
-        height: 100%;
-        margin-left: 2%;
-        margin-right: 2%;
+    
+    .itk {
+        margin-top: -5%;
+    }
+    
+    .itmission {
+        margin-left: 4%;
+        margin-top: -5%;
+    }
+    .csb {
+        margin-bottom: 2%;
     }
 
-    .pre_sponsors .content1 .wrap img {
+    .pre_sponsors .content1 .wrap .sponsor_logo img {
         max-width: 100%;
         max-height: 100%;
     }
@@ -769,7 +809,7 @@
     .contact .wrap {
         padding: 0%;
         margin-top: 5%;
-        width: 75%;
+        width: 55%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -802,7 +842,7 @@
     .contact .wrap .organizer img {
         margin-top: 5%;
         margin-left: 11%;
-        display: inline-block;
+        display: inline;
         width: 10em;
         height: 10em;
     }
