@@ -117,4 +117,5 @@ smoothScroll.init({
 
 // => http://stackoverflow.com/a/4036868/4723940
 // => stupid inconsistent hack
+$('.sponsor_logo').removeAttr("style");
 $('.sponsor_logo').css("display", "block");
