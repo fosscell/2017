@@ -88,25 +88,25 @@
         </div>
       </div>
 
-        <div class="logo">
+        <div class="logo" onclick="smoothScroll.animateScroll('#top')">
             <img src="img/logo.svg" />
         </div>
         <div class="header">
-            <span class="title">FOSSMeet '17</span>
+            <span onclick="smoothScroll.animateScroll('#top')" class="title">FOSSMeet '17</span>
             <input id="main-menu-state" type="checkbox" />
             <label class="main-menu-btn" for="main-menu-state">
               <span class="main-menu-btn-icon"></span>
             </label>
             <ul id="main-menu" class="menu sm sm-vertical sm-simple">
                 <li><a href="http://fossmeet.in" target="_blank">FOSSMeet '16 Website &nbsp; |</a></li>
-                <li><a href="#why_sponsor_us">&nbsp; Why Sponsor Us &nbsp; |</a></li>
-                <li><a href="#sponsors">&nbsp; Previous Sponsors &nbsp; |</a></li>
-                <li><a href="#contact">&nbsp; Reach Us</a></li>
+                <li onclick="smoothScroll.animateScroll('#why_sponsor_us')"><a href="#why_sponsor_us">&nbsp; Why Sponsor Us &nbsp; |</a></li>
+                <li onclick="smoothScroll.animateScroll('#sponsors')"><a href="#sponsors">&nbsp; Previous Sponsors &nbsp; |</a></li>
+                <li onclick="smoothScroll.animateScroll('#contact')"><a href="#contact">&nbsp; Reach Us</a></li>
             </ul>
         </div>
         <div class="clearfix"></div>
         <div class="empty"></div>    <!--   to negate the effect of fixed header-->
-        <div class="front">
+        <div class="front" id="top">
             <div class="img">
                 <img src="img/logo.svg" />
             </div>
@@ -136,6 +136,7 @@
                 <div class="image"><img src="img/worldtux.png" /></div>
                 <div class="content1">FOSSMeet is an annual event on Free and Open source software, conducted at National Institute of Technology, Calicut. Started with a vision to create a culture of innovation, evolution and open standards, the meet intends to support the FOSS community and the dissemination of FOSS ideology through hands-on sessions, discussions and lectures by eminent personalities. Nothing better to get you introduced to the world of FOSS.</div>
             </div>
+            <div class="clearfix"></div>
         </div>
 
         <div class="divider"></div>
@@ -184,7 +185,7 @@
         <div class="filler img3"></div>
 
         <div class="pre_speakers">
-            <div class="heading">SPEAKERS</div>
+            <div class="heading"> Previous Speakers</div>
             <div class="grid">
                 <span class="photo">
                     <a href="#" target="_blank">
@@ -242,12 +243,6 @@
                 </span>
                 <span class="photo">
                     <a href="#" target="_blank">
-                        <img src="img/speakers/anoopThomas.jpg" />
-                    </a>
-                    <span class="photo_content">Anoop Thomas Mathew</span>
-                </span>
-                <span class="photo">
-                    <a href="#" target="_blank">
                         <img src="img/speakers/abhas.jpg" />
                     </a>
                     <span class="photo_content">Abhas Abhinav</span>
@@ -257,6 +252,12 @@
                         <img src="img/speakers/balasankar.png" />
                     </a>
                     <span class="photo_content">Balasankar C</span>
+                </span>
+                <span class="photo">
+                    <a href="#" target="_blank">
+                        <img src="img/speakers/anoopThomas.jpg" />
+                    </a>
+                    <span class="photo_content">Anoop Thomas Mathew</span>
                 </span>
                 <span class="photo">
                     <a href="#" target="_blank">
@@ -304,34 +305,27 @@
 
        <!-- Very bad Coding practice, should not be used again -->
         <div class="pre_sponsors" id="sponsors">
-            <div class="heading">Sponsors</div>
+            <div class="heading">Previous Sponsors</div>
             <div class="wrapper">
                 <div class="content1">
                     <div class="wrap">
-                        <!--<img src="img/sponsors/sponsors.png" />-->
-                        
-                        <img id="Image-Maps-Com-image-maps-2016-09-27-123750" src="img/sponsors/sponsors.png" border="0" width="1130" height="740" orgWidth="1130" orgHeight="740" usemap="#image-maps-2016-09-27-123750" alt="" />
-                        <map name="image-maps-2016-09-27-123750" id="ImageMapsCom-image-maps-2016-09-27-123750">
-                            <area  alt="" title="Concur 2016" href="https://www.concur.com/" shape="rect" coords="62,33,274,259" style="outline:none;" target="_self" onclick="https://www.concur.com/"    />
-                            <area  alt="" title="International Centre for Free and Open Source Software" href="http://icfoss.in/" shape="rect" coords="477,31,649,105" style="outline:none;" target="_self" onclick="http://icfoss.in/"    />
-                            <area  alt="" title="Kerala State IT Mission" href="http://www.itmission.kerala.gov.in/" shape="rect" coords="798,22,995,309" style="outline:none;" target="_self"     />
-                            <area  alt="" title="Catholic Syrian Bank" href="http://www.csb.co.in/" shape="rect" coords="42,312,235,498" style="outline:none;" target="_self"     />
-                            <area  alt="" title="Linux Journal" href="http://www.linuxjournal.com/" shape="rect" coords="421,140,637,239" style="outline:none;" target="_self"     />
-                            <area  alt="" title="IT @ kerala" href="http://www.itmission.kerala.gov.in/" shape="rect" coords="347,302,596,435" style="outline:none;" target="_self"     />
-                            <area  alt="" title="National Resource Centre for Free and Open Software" href="http://www.nrcfoss.org.in/" shape="rect" coords="120,536,346,669" style="outline:none;" target="_self"     />
-                            <area  alt="" title="PC Quest" href="http://www.pcquest.com/" shape="rect" coords="717,366,878,423" style="outline:none;" target="_self"     />
-                            <area  alt="" title="digit DOT in" href="http://www.digit.in/" shape="rect" coords="447,475,614,536" style="outline:none;" target="_self"     />
-                            <area  alt="" title="AirTel" href="http://www.airtel.in/" shape="rect" coords="451,585,618,708" style="outline:none;" target="_self"     />
-                            <area  alt="" title="DTDC" href="http://dtdc.in/" shape="rect" coords="707,646,863,684" style="outline:none;" target="_self"     />
-                            <!--<area shape="rect" coords="1128,738,1130,740" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />-->
-                        </map>
-
-                        
+                        <div class="sponsor_logo"><img src="img/sponsors/concur.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/icfoss.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/thinkdigit.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/catholicsyrianbank.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/linuxjournal.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/nrcfoss.jpg" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/itatkerala.jpg" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/keralaitmission.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/vestigeitlabs.png" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/PCQuest.jpg" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/Airtel.jpg" /></div>
+                        <div class="sponsor_logo"><img src="img/sponsors/DTDC.png" /></div>
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
+        <div class="clearfix"></div>
         <div class="filler img1"></div>
 
         <div class="contact" id="contact">
@@ -372,5 +366,13 @@
         <script type="text/javascript" src="js/smooth-scroll.js"></script>
         <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        <script>
+            smoothScroll.init({
+                speed: 1500,
+                easing: 'easeInOutCubic',
+                updateURL: false,
+            });
+        </script>
+
     </body>
 </html>

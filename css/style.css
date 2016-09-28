@@ -69,7 +69,7 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1001px) {
     .logo {
         position: fixed;
         /*top: 0.7%;*/
@@ -191,7 +191,7 @@ a {
 
     .front .img {
         float: left;
-        margin-left: 10%;
+        margin-left: 6%;
         margin-top: 4%;
     }
 
@@ -202,7 +202,7 @@ a {
     .front .wrapper {
         text-align: right;
         padding: 7%;
-        width: 50%;
+        max-width: 50%;
         float: right;
         height: auto;
         color: white;
@@ -333,7 +333,7 @@ a {
     }
 
     .gallery .set {
-        margin-left: -10%;
+        margin-left: -7%;
         margin-bottom: 5%;
         width: 40%;
         float: left;
@@ -566,9 +566,9 @@ a {
 
     .contact .heading {
         text-indent: -110000px;
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-top: 5%;
+        margin-left: 0%;
+        margin-right: 2%;
+        margin-top: 1%;
         float: left;
         width: 20%;
         height: 500px;
@@ -578,9 +578,9 @@ a {
     }
 
     .contact .wrap {
-        padding: 5%;
+        padding: 0%;
         margin-top: 5%;
-        width: 70%;
+        width: 75%;
         float: left;
     }
 

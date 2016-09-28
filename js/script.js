@@ -61,8 +61,8 @@ $("document").ready(function(){
         var array = ["FOSSMeet '16 Website", "Why Sponsor Us", "Previous Sponsors", "Reach Us"];
 
         var j = 0;
-        $("#main-menu ul li").each(function(i) {
-            console.log(this.text());
+        $("#main-menu li").each(function(i) {
+            console.log($(this).text());
             $(this).text(array[j++]);
         });
 
