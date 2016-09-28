@@ -61,11 +61,13 @@ $("document").ready(function(){
         var array = ["FOSSMeet '16 Website", "Why Sponsor Us", "Previous Sponsors", "Reach Us"];
 
         var j = 0;
-        $("#main-menu li").each(function(i) {
-            console.log($(this).text());
-            $(this).text(array[j++]);
-        });
-
+        if(screen.width < 800) {
+            $("#main-menu li").each(function(i) {
+                console.log($(this).text());
+                $(this).text(array[j++]);
+            });
+        }
+            
         $('#main-menu').smartmenus();
 
         var $mainMenuState = $('#main-menu-state');
@@ -103,5 +105,6 @@ var DisplaySpecialLink = function(url, desc){
 };
 
 var PreviewURL = function(url){
-  DisplaySpecialLink("https://docs.google.com/gview?embedded=true&url=" + url, "<a href='" + url + "' style='text-decoration: none;' download='true'>Download Brochure</a>");
+  //DisplaySpecialLink("https://docs.google.com/gview?embedded=true&url=" + url, "<a href='" + url + "' style='text-decoration: none;' download='true'>Download Brochure</a>");
+  console.log("Coming Soon!");
 };

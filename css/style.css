@@ -288,7 +288,7 @@ a {
         background-repeat: no-repeat;
         text-indent: -110000px;
     }
-    
+
     .about .image {
         margin-top: 10%;
         margin-left: -15%;
@@ -486,11 +486,11 @@ a {
         margin-left: 1%;
         margin-top: 10%;
     }
-    
+
     .why .wrap ul {
         font-size: 1.3em;
     }
-    
+
     .why .wrap ul li {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -539,6 +539,12 @@ a {
     .pre_sponsors .content1 .wrap .sponsor_logo {
         width: 25%;
         float: left;
+    }
+    
+    .pre_sponsors .wrapper .email {
+        clear: both;
+        font-size: 1.3em;
+        margin-top: 4%;
     }
     
     .lj {
@@ -621,7 +627,7 @@ a {
         text-align: center;
     }
 
-    .contact .wrap .email a {
+    /*.contact .wrap */.email a {
         color: #4285f4;
         border-bottom: 1px dashed;
     }
@@ -654,7 +660,7 @@ a {
         background-attachment: fixed;
         background-position: center;
     }
-    
+
     .footer {
         font-size: 1em;
         padding: 1%;
