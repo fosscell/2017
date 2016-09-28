@@ -536,7 +536,7 @@ a {
         width: 100%;
     }
 
-    .pre_sponsors .content1 .wrap .sponsor_logo {
+    .pre_sponsors .content1 .wrap .someRandomWordThatDoesNotMeanAnything {
         width: 25%;
         float: left;
     }
@@ -577,7 +577,7 @@ a {
     .itk {
         margin-top: -5%;
     }
-    .pre_sponsors .content1 .wrap .sponsor_logo img {
+    .pre_sponsors .content1 .wrap .someRandomWordThatDoesNotMeanAnything img {
         max-width: 100%;
         max-height: 100%;
     }
