@@ -540,40 +540,40 @@ a {
         width: 25%;
         float: left;
     }
-    
+
     .pre_sponsors .wrapper .email {
         clear: both;
         font-size: 1.3em;
         margin-top: 4%;
     }
-    
+
     .lj {
         margin-top: -10%;
     }
-    
+
     .thinkdigit {
         margin-top: 5%;
     }
-    
+
     .pcquest {
         margin-top: -7%;
         margin-left: 4%;
     }
-    
+
     .airtel {
         margin-top: -17%;
         margin-left: 25%;
     }
-    
+
     .dtdc {
         margin-left: 28%;
         margin-top: -2%;
     }
-    
+
     .vestige {
         margin-top: -23%;
     }
-    
+
     .itk {
         margin-top: -5%;
     }
@@ -581,7 +581,7 @@ a {
         max-width: 100%;
         max-height: 100%;
     }
-    
+
     .csb {
         margin-bottom: 2%;
     }
@@ -659,6 +659,7 @@ a {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        height: 600px;
     }
 
     .footer {
