@@ -67,7 +67,7 @@ $("document").ready(function(){
                 $(this).text(array[j++]);
             });
         }
-            
+
         $('#main-menu').smartmenus();
 
         var $mainMenuState = $('#main-menu-state');
@@ -108,3 +108,9 @@ var PreviewURL = function(url){
   //DisplaySpecialLink("https://docs.google.com/gview?embedded=true&url=" + url, "<a href='" + url + "' style='text-decoration: none;' download='true'>Download Brochure</a>");
   console.log("Coming Soon!");
 };
+
+smoothScroll.init({
+    speed: 1500,
+    easing: 'easeInOutCubic',
+    updateURL: false,
+});
