@@ -63,7 +63,6 @@ $("document").ready(function(){
         var j = 0;
         if(screen.width < 800) {
             $("#main-menu li").each(function(i) {
-                console.log($(this).text());
                 $(this).text(array[j++]);
             });
         }

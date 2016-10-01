@@ -226,7 +226,31 @@
         margin-left: auto;
         margin-right: auto;
     }
+    
+    .why div .image {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+    }
 
+    .why div .image img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .why div .content1 {
+        line-height: 1.2;
+        text-align: center;
+        margin: auto;
+        max-width: 90%;
+        font-size: 1.1em;
+    }
+
+/*
     .why .wrap ul {
         line-height: 1.2;
         max-width: 90%;
@@ -245,6 +269,8 @@
         font-weight: 600;
         font-size: 1.3em;
     }
+*/
+    
     .pre_sponsors {
         max-width: 100%;
     }
@@ -266,10 +292,9 @@
     .pre_sponsors .wrapper .content1 .wrap .someRandomWordThatDoesNotMeanAnything {
         margin-top: 7%;
         margin-bottom: 7%;
-        display: inline-block;
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        max-width: 100%;
     }
 
     .pre_sponsors .wrapper .content1 .wrap .someRandomWordThatDoesNotMeanAnything img {
