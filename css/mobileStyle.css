@@ -3,7 +3,8 @@
         background-color: #111;
         width: 100%;
         height: auto;
-/*        position: fixed;*/
+        position: fixed;
+        top: 0;
     }
 
     .header .title {
@@ -52,6 +53,7 @@
     }
 
     .front .img img {
+        padding-top: 25%;
         max-width: 100%;
         max-height: 100%;
     }
