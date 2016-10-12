@@ -3,4 +3,5 @@ google*.html
 # GEdit Temporary Files
 *~
 *.~
-
+# Remove the big BLOB from GIT DVCS
+assets/brochure.pdf
