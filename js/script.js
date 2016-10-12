@@ -104,8 +104,7 @@ var DisplaySpecialLink = function(url, desc){
 };
 
 var PreviewURL = function(url){
-  //DisplaySpecialLink("https://docs.google.com/gview?embedded=true&url=" + url, "<a href='" + url + "' style='text-decoration: none;' download='true'>Download Brochure</a>");
-  console.log("Coming Soon!");
+  DisplaySpecialLink("https://docs.google.com/gview?embedded=true&url=" + url, "<a href='" + url + "' style='text-decoration: none;' download='true'>Download Brochure</a>");
 };
 
 smoothScroll.init({
