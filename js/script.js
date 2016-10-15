@@ -55,7 +55,12 @@ $("document").ready(function(){
             );
     } else {
         $('.preview, .logo').remove();
-
+        
+        var images = $('.set').children();
+        var remove = [0, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+        for(i = 0; i < remove.length; i++) {
+            images[remove[i]].remove();
+        }
         $('.filler').addClass('divider').removeClass('filler');
 
         var array = ["FOSSMeet '16 Website", "Why Sponsor Us", "Previous Sponsors", "Reach Us"];
@@ -67,6 +72,21 @@ $("document").ready(function(){
             });
         }
 
+        $("#main-menu li").click(function(i) {
+            var $menu = $('#main-menu');
+            if (this.checked) {
+                $menu.hide();
+                if ($mainMenuState[0].checked) {
+                    $mainMenuState[0].checked = false;
+                }
+            } else {
+                $menu.show()
+                 if ($mainMenuState[0].checked) {
+                    $mainMenuState[0].click();
+                }
+            }
+        });
+        
         $('#main-menu').smartmenus();
 
         var $mainMenuState = $('#main-menu-state');
@@ -112,3 +132,8 @@ smoothScroll.init({
     easing: 'easeInOutCubic',
     updateURL: false,
 });
+
+$(window).load(function() 
+      {       
+        $(".page-load-spinner").fadeOut("slow");  
+      })

@@ -140,7 +140,7 @@ body {
 }
 body {
     background-color: #f8f9ff;
-    font-family: 'Myriad';
+    font-family: 'Vegur';
     overflow: auto;
     height: 100%;
     overflow-x: hidden;
@@ -152,8 +152,7 @@ a {
 @media only screen and (min-width: 1001px) {
     .logo {
         position: fixed;
-        /*top: 0.7%;*/
-
+        top: 0.3%;
         cursor: pointer;
         left: 2%;
         width: 2%;
@@ -243,33 +242,53 @@ a {
     }
     .fade-in.brochure {
         -webkit-animation-delay: 2.6s;
-        animation-delay: 2.6s;
+        animation-delay: 1.8s;
     }
     .fade-in.social {
         -webkit-animation-delay: 2s;
-        animation-delay: 2s;
+        animation-delay: 2.3s;
     }
     .front {
         z-index: 2;
         overflow: hidden;
         width: 100%;
         height: 100vh;
-        background-color: #4285f4;
+    }
+    
+    .front .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-image: url("../img/front.jpg");
         background-size: cover;
+        height: 100%;
+        z-index: -2;
+    }
+    
+    .front .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.68);
     }
     .front .img {
-        float: left;
-        margin-left: 6%;
-        margin-top: 4%;
+        float: right;
+        margin-right: 6%;
+/*        margin-top: 4%;*/
     }
     .front .img svg {
         fill: white;
     }
     .front .wrapper {
-        text-align: right;
+        text-align: left;
         padding: 7%;
         max-width: 50%;
-        float: right;
+        margin: auto;
+        float: left;
         height: auto;
         color: white;
     }
@@ -291,10 +310,12 @@ a {
     }
     .front .wrapper .brochure {
         cursor: pointer;
-        float: right;
+        float: left;
         margin-top: 10%;
         display: table;
         width: auto;
+/*        margin: auto;*/
+        margin-top: 5%;
         text-transform: uppercase;
         font-size: 1.4em;
         padding: 20px;
@@ -308,14 +329,15 @@ a {
         box-shadow: inset 0 100px 0 0 #fff;
     }
     .social ul {
-        padding-left: 5%;
-        margin-right: 6%;
-        width: 50%;
+        padding-left: 3%;
+        margin-right: auto;
+        margin-right: auto;
+        width: 100%;
         color: white;
-        text-align: right;
+        text-align: left;
         position: absolute;
         top: 90%;
-        right: 0%;
+        left: 0%;
         list-style-type: none;
         font-size: 1.4em;
     }
@@ -344,7 +366,7 @@ a {
         text-indent: -110000px;
     }
     .about .image {
-        margin-top: 10%;
+        margin-top: 12%;
         margin-left: -15%;
         width: 40%;
         height: auto;
@@ -370,18 +392,18 @@ a {
     .about .content1 {
         padding: 10px;
         font-size: 1.2em;
-        text-align: justify;
+        text-align: right;
         line-height: 1.1;
         width: 40%;
         float: left;
-        margin-top: 14%;
+        margin-top: 17%;
     }
     .why .content1 {
         padding: 10px;
         font-size: 1.2em;
-        text-align: justify;
+        text-align: right;
         line-height: 1.1;
-        width: 40%;
+        width: 43%;
         float: left;
         margin-top: 14%;
     }
@@ -464,17 +486,17 @@ a {
         background-repeat: no-repeat;
     }
     .pre_speakers .grid {
-        border: 5px solid #efefef;
+/*        border: 5px solid #efefef;*/
         float: left;
         padding: 1%;
         max-width: 80%;
         margin-left: 1%;
-        margin-top: -2%;
+        margin-top: 3.7%;
     }
     .pre_speakers .grid .photo {
-        /*        margin-top: 2%;*/
-        margin-bottom: 1%;
-        /*        padding-bottom: 2%;*/
+        margin-top: 2%;
+        margin-bottom: 2%;
+/*        padding-bottom: 2%;*/
         width: 20%;
         height: auto;
         float: left;
@@ -573,8 +595,8 @@ a {
     }
     .pre_sponsors .wrapper {
         float: left;
-        width: 80%;
-        margin-left: -10%;
+        width: 70%;
+        margin-left: -5%;
         margin-top: 6%;
     }
     .pre_sponsors .wrapper .content1 {
@@ -582,7 +604,8 @@ a {
         width: 100%;
     }
     .pre_sponsors .content1 .wrap .someRandomWordThatDoesNotMeanAnything {
-        width: 25%;
+        width: auto;
+        height: auto;
         float: left;
     }
     .pre_sponsors .wrapper .email {
@@ -590,14 +613,15 @@ a {
         font-size: 1.3em;
         margin-top: 4%;
     }
+
     .lj {
-        margin-top: -10%;
+        margin-top: -4%;
     }
-    .thinkdigit {
-        margin-top: 5%;
+    .concur {
+        margin-left: -3%;
     }
     .pcquest {
-        margin-top: -7%;
+        margin-top: 2%;
         margin-left: 4%;
     }
     .airtel {
@@ -608,18 +632,34 @@ a {
         margin-left: 28%;
         margin-top: -2%;
     }
+    .nrcfoss {
+        margin-left: 4%;
+        margin-top: -7%;
+    }
+    
     .vestige {
-        margin-top: -23%;
+        margin-left: -4%;
+        margin-top: -16%;
     }
     .itk {
-        margin-top: -5%;
+        margin-top: 3%;
     }
-    .pre_sponsors .content1 .wrap .someRandomWordThatDoesNotMeanAnything img {
-        max-width: 100%;
-        max-height: 100%;
+    .itmission {
+        margin-left: 4%;
+        margin-top: -9%;
+    }
+    .thinkdigit {
+        margin-left: 4%;
+        margin-top: 2%;
     }
     .csb {
-        margin-bottom: 2%;
+        margin-top: 4%;
+        margin-left: 6%;
+    }
+
+    .pre_sponsors .content1 .wrap .someRandomWordThatDoesNotMeanAnything img {
+        max-width: 300px;
+        max-height: 300px;
     }
     .img2 {
         background-image: url(../img/events/lectures.JPG);
@@ -666,7 +706,10 @@ a {
         border-bottom: none;
     }
     .contact .wrap .organizer {
-        margin-top: 4%;
+        margin-top: 2%;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .contact .wrap .organizer h3 {
         text-align: center;
@@ -674,7 +717,7 @@ a {
     }
     .contact .wrap .organizer img {
         margin-top: 5%;
-        margin-left: 11%;
+        margin-left: 7%;
         display: inline-block;
         width: 15em;
         height: 15em;
