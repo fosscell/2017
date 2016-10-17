@@ -254,7 +254,7 @@ a {
         width: 100%;
         height: 100vh;
     }
-    
+
     .front .bg {
         position: absolute;
         left: 0;
@@ -265,7 +265,7 @@ a {
         height: 100%;
         z-index: -2;
     }
-    
+
     .front .overlay {
         position: absolute;
         left: 0;
@@ -595,9 +595,10 @@ a {
     }
     .pre_sponsors .wrapper {
         float: left;
-        width: 69.6%;
+        width: 70%;
         margin-left: -5%;
         margin-top: 6%;
+        text-align: center;
     }
     .pre_sponsors .wrapper .content1 {
         margin-left: 5%;
@@ -607,6 +608,7 @@ a {
         width: auto;
         height: auto;
         float: left;
+        min-width: 15%;
     }
     .pre_sponsors .wrapper .email {
         clear: both;
@@ -614,47 +616,53 @@ a {
         margin-top: 4%;
     }
 
-    .lj {
-        margin-top: -4%;
-    }
     .concur {
-        margin-left: -3%;
-    }
-    .pcquest {
-        margin-top: 2%;
-        margin-left: 4%;
-    }
-    .airtel {
-        margin-top: -17%;
-        margin-left: 25%;
-    }
-    .dtdc {
-        margin-left: 28%;
-        margin-top: -2%;
-    }
-    .nrcfoss {
-        margin-left: 4%;
-        margin-top: -7%;
-    }
-    
-    .vestige {
+        margin-top: 0%;
         margin-left: -4%;
-        margin-top: -16%;
     }
-    .itk {
-        margin-top: 3%;
-    }
-    .itmission {
-        margin-left: 4%;
-        margin-top: -9%;
+    .icfoss {
+        margin-top: 0%;
+        margin-left: -2%;
     }
     .thinkdigit {
+        margin-top: 0%;
+        margin-left: 2%;
+    }
+    .pcquest {
+        margin-top: 0%;
         margin-left: 4%;
-        margin-top: 2%;
     }
     .csb {
+        margin-top: 6%;
+        margin-left: -8%;
+    }
+    .lj {
         margin-top: 4%;
-        margin-left: 6%;
+        margin-left: -2%;
+    }
+    .nrcfoss {
+        margin-top: 4%;
+        margin-left: 2%;
+    }
+    .itk {
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    .vestige {
+        margin-top: -4%;
+        margin-left: -4%;
+    }
+    .itmission {
+        margin-top: -12%;
+        margin-left: 2%;
+    }
+    .airtel {
+        margin-top: -20%;
+        margin-left: 0%;
+    }
+    .dtdc {
+        margin-top: -24%;
+        margin-left: 8%;
     }
 
     .pre_sponsors .content1 .wrap .someRandomWordThatDoesNotMeanAnything img {
