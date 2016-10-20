@@ -595,7 +595,7 @@ a {
     }
     .pre_sponsors .wrapper {
         float: left;
-        width: 69.6%;
+        width: 70%;
         margin-left: -5%;
         margin-top: 6%;
         text-align: center;
@@ -609,6 +609,7 @@ a {
         height: auto;
         float: left;
         min-width: 15%;
+        text-align: center;
     }
     .pre_sponsors .wrapper .email {
         clear: both;
@@ -634,7 +635,7 @@ a {
     }
     .csb {
         margin-top: 6%;
-        margin-left: -8%;
+        margin-left: -12%;
     }
     .lj {
         margin-top: 4%;
