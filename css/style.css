@@ -360,7 +360,7 @@ a {
         float: left;
         width: 20%;
         height: 500px;
-        background-image: url("../img/about-us.png");
+        background-image: url("../img/headers/about-us.png");
         background-size: contain;
         background-repeat: no-repeat;
         text-indent: -110000px;
@@ -419,7 +419,7 @@ a {
         float: left;
         width: 20%;
         height: 500px;
-        background-image: url("../img/gallery.png");
+        background-image: url("../img/headers/gallery.png");
         background-size: contain;
         background-repeat: no-repeat;
         text-indent: -110000px;
@@ -481,7 +481,7 @@ a {
         float: left;
         width: 20%;
         height: 500px;
-        background-image: url("../img/speakers.png");
+        background-image: url("../img/headers/speakers.png");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -549,7 +549,7 @@ a {
         float: left;
         width: 20%;
         height: 500px;
-        background-image: url("../img/why-us.png");
+        background-image: url("../img/headers/why-us.png");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -589,7 +589,7 @@ a {
         float: left;
         width: 20%;
         height: 500px;
-        background-image: url("../img/sponsors.png");
+        background-image: url("../img/headers/sponsors.png");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -690,7 +690,7 @@ a {
         float: left;
         width: 20%;
         height: 500px;
-        background-image: url("../img/reach-us.png");
+        background-image: url("../img/headers/reach-us.png");
         background-size: contain;
         background-repeat: no-repeat;
     }
