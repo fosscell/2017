@@ -133,7 +133,9 @@ smoothScroll.init({
     updateURL: false,
 });
 
-$(window).load(function() 
+/*$(window).load(function() 
       {       
         $(".page-load-spinner").fadeOut("slow");  
       })
+*/
+
